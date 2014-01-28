@@ -6,7 +6,7 @@
 .jumbotronMain {
 	background-attachment: relative;
 	background-image: url(../images/banner-bg.jpg);
-    background-position: 0% 0%;
+    background-position: 0% 10%;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 450px;
