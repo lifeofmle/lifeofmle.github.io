@@ -1,40 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US" class="no-js">
 	<head>
-		<!-- Basic Page Needs
-		================================================== -->
-		<meta charset="utf-8">	
-		<title>Michael Le - UX/UI Developer</title>
-		<meta name="description" content="">
-		<meta name="author" content="Michael Le">
+		<!-- ==============================================
+    Title and Meta Tags
+    =============================================== -->
+    <meta charset="utf-8">
+    <title>Michael Le - UX Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<!-- Bootstrap -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
-		<!-- Custom styles for this template -->
-		<link href="css/portfolio.css" rel="stylesheet">
-		<link href="css/footer.css" rel="stylesheet">
-
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-		<![endif]-->
-
-		<!--[if IE 7]>
-		<link href="assets/font-awesome/css/font-awesome-ie7.min.css" rel="stylesheet">
-		<![endif]-->
-
-		<!-- Favicons
-		================================================== -->
-		<link rel="shortcut icon" href="images/favicon.ico?hi=lo">
-		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <!-- ==============================================
+    Favicons
+    =============================================== -->
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-touch-icon-114x114.png">
+    
+    <!-- ==============================================
+    CSS
+    =============================================== -->    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link id="main" rel="stylesheet" href="css/shapes-blue.css">
+    
+    
+    <!-- ==============================================
+    Fonts
+    =============================================== -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- ==============================================
+    JS
+    =============================================== -->
+      
+    <!--[if lt IE 9]>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    
+    <script type="text/javascript" src="js/libs/modernizr.min.js"></script>
 
 		<!-- Google Analytics -->
 		<script>
@@ -47,503 +51,619 @@
 			ga('send', 'pageview');
 		</script>
 	</head>
-	<body data-spy="scroll" data-target=".navbar-fixed-top">
 
-		<!-- Wrap all page content here -->
-		<div id="wrap">
-
-			<!-- Start of Navigation bar -->
-			<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-				<div class="container">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="index.html"> <img width="20" height="20" src="images/logo/Icon-20x20@2x.png"></a>
-						<a class="navbar-brand" href="index.html">Michael Le</a>
-					</div>
-					<div class="navbar-collapse collapse">
-						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#about">About</a></li>
-							<li><a href="#portfolio">Portfolio</a></li>
-							<li><a href="#contact">Contact</a></li>
-						</ul>
-					</div><!--/.nav-collapse -->
-				</div>
-			</div>
-			<!-- End of navigation -->
-
-			<!-- Main landing image -->
-			<div class="jumbotron jumbotronMain">
-				<div class="container">
-					<div class="row pull-right">
-						<div class="col-md-10 col-md-offset-2">
-							<h1 class="mainH1">Taking ideas into <b>Reality</b></h1>
-							<h2 class="mainH2">Code meets design</h2>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- End of Main landing image -->
-
-			<!-- Start of About -->
-			<div id="about" class="container containerMain">
-				<p class="lead">
-				I graduated Computer Engineering from the University of Waterloo and since then I have been fortunate enough to have worked in New York, NY and London, UK. Below are a few of the companies I have had the pleasure of working at:			
-				
-				</p>
-				<div class="row">
-					<div class="col-md-2 col-md-offset-1">
-						<a href="http://infusion.com/" target="_blank">
-							<img src="images/company/infusion.png" width="100%" style="max-width:190px"/>
-						</a>
-					</div>
-					<div class="col-md-2">
-						<a href="http://www.hsbcnet.com/" target="_blank">
-							<img src="images/company/hsbc.png" width="100%" style="max-width:190px"/>
-						</a>
-					</div>
-					<div class="col-md-2">
-						<a href="https://www.credit-suisse.com/investment_banking/en/index.jsp" target="_blank">
-							<img src="images/company/creditsuisse.png" width="100%" style="max-width:190px"/>
-						</a>
-					</div>
-					<div class="col-md-2">
-						<a href="http://group.barclays.com/home" target="_blank">
-							<img src="images/company/barclays.png" width="100%" style="max-width:190px"/>
-						</a>
-					</div>
-					<div class="col-md-2">
-						<a href="http://www.tmmc.ca/en/index.html" target="_blank">
-							<img src="images/company/toyota.png" width="100%" style="max-width:190px"/>
-						</a>
-					</div> 
-				</div>
-				<p class="lead">
-				<br />
-				I write on topics relating to the world of design and work life on my personal blog, "<a href="http://designinglogic.wordpress.com" target="_blank">Designing Logic</a>".
-				<br /><br />
-				I am always looking for opportunities to help people interact with technology better. For a few months I volunteered in an after school activity to teach kids ages 9-11 how to code as part of the <a href="https://www.codeclub.org.uk/" target="_blank">Code Club</a> program.
-				<br /><br />
-				This webpage is a portfolio showcase of my UX experience.
-				<br />
-				</p>
-				<!-- end of companies -->
-
-				<!-- <div class="page-header">
-					<h1>Sample Work</h1>
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<h3>Composite Images</h3>
-						<p>Before implementing the actual code and style for applications, it is good to come up with colour composites after wireframing so that people/stakeholders/developers can have a better idea of how things will look</p>
-						<a href="images/desktop/RiskReportSample.jpg" target="_blank">
-						<img src="images/desktop/RiskReportSample.jpg" width="100%" style="max-width:400px;" />
-						</a>
-					</div>
-					<div class="col-md-4">
-						<h3>Charting</h3>
-						<p>In the world of finance and user interface design you need to know multithreading, grids and charts. Below is a sample of charts done with the AmCharts library</p>
-						<a href="images/desktop/WPF-Charting.jpg" target="_blank">
-						<img src="images/desktop/WPF-Charting.jpg" width="100%" style="max-width:400px;" />
-						</a>
-					</div>
-					<div class="col-md-4">
-						<h3>Flat Designs</h3>
-						<p>By default the styles for WPF controls are not "flat". They are of the standard Windows style. Leveraging the power of control templates and styles, I was able to create a flat style for WPF</p>
-						<a href="images/desktop/WPF-Flat.jpg" target="_blank">
-						<img src="images/desktop/WPF-Flat.jpg" width="100%" style="max-width:400px;" />
-						</a>
-					</div>
-				</div>
-			</div> -->
-			<!-- End of About -->
-
-			<!-- Start of Portfolio -->
-
-
-			<div id="portfolio">
-
-        <div class="jumbotron jumbotronPageHeader">
-          <div class="container">
-            <div class="row">
-              <blockquote class="pull-right">
-                <br />
-          <p>Design isn’t just wire frames or visual style; it’s about the product as a whole.</p>
-          <small class="quoteAuthor">Sahil Lavingia</small>
-        </blockquote>
-        <h1>UX</h1>
-          </div>
-          </div>
+<body data-spy="scroll" data-target="#main-nav" data-offset="400">
+  
+    <!--=== PAGE PRELOADER ===-->
+    <div id="page-loader"><h1 class='loader-logo'>Michael Le<span> / UX Portfolio</span></h1><span class="page-loader-gif"></span></div>
+    
+    <!--=== BACKGROUND ===-->
+    <div id="backgrounds" data-backgrounds="images/background-1.jpg,images/background-2.jpg, images/sketching.jpg"></div>
+    <div id="color-overlay"></div>
+  
+    <!-- ==============================================
+    MAIN NAV
+    =============================================== -->
+    <div id="main-nav" class="navbar navbar-fixed-top">
+      <div class="container">
+      
+        <div class="navbar-header">
+        
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
+            <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+          </button>
+          
+          <!-- ======= LOGO ========-->
+          <a class="navbar-brand scrollto" href="#home">Michael Le<span> / UX Portfolio</span></a>
+          <!-- <a class="navbar-brand scrollto ir-logo" href="#home">SHAPES<span> / Creative Studio</span></a> -->
+        
         </div>
-
-        <div class="container">
-				<!-- Start of Modern Grocers -->
-        <div id="modernGrocers">
-          <div class="page-header">
-            <h1>Modern Grocers: App Concept</h1><h4 class="pull-right"><small>Skills</small> Storyboarding, Wireframes, Prototyping</h4>
-          </div>
-        </div>      
-
-        <div class="row">
-          <div class="col-md-6">
-              <img src="images/ModernGrocersMap-small.png" width="100%" />
-
-              <h3>Wireframes</h3>
-              <p>For the <a href="http://designinglogic.files.wordpress.com/2014/02/moderngrocerswireframes.pdf" target="_blank">complete wireframes (1.5MB)</a> provide a clearer insight of the individual screens of the application</p>
-            </div>
-
-            <div class="col-md-4 col-md-offset-1">
-              <a href="http://indigo.infragistics.com/prototype/WY6ENQEM?highlight=1" target="_blank">
-                <img src="images/ModernGrocerApp.jpg" style="max-width:250px"/>
-              </a>
-
-              <h3>Demo</h3>
-              <p>This <a href="http://indigo.infragistics.com/prototype/WY6ENQEM?highlight=1" target="_blank">demo</a> allows you to click through the key stages of the customer journey with the Modern Grocer App</p>
+        
+        <div id="site-nav" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="sr-only">
+              <a href="#home" class="scrollto">Home</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="scrollto">Portfolio</a>
+            </li>
+            <li>
+              <a href="#about" class="scrollto">About</a>
+            </li>
+            <li>
+              <a href="#contact" class="scrollto">Contact</a>
+            </li>
+          </ul>
+        </div><!--End navbar-collapse -->
+        
+      </div><!--End container -->
+      
+    </div><!--End main-nav -->
+    
+    <!-- ==============================================
+    HEADER
+    =============================================== -->
+    <header id="home" class="jumbotron">
+    
+      <div class="container">
+      
+        <img class="img-responsive img-center header-logo" src="images/logo/Icon-72x72@2x.png" alt="Michael Le">
+      
+        <div class="message-box clearfix">
+        
+          <div class="first-line">
+            <p>Code meets design</p>
+          </div>  
+          
+          <div class="second-line flexslider home-slider">
+          
+            <ul class="slides">
+            
+              <li><p>Taking ideas into reality</p></li>
               
+              <li><p>Transforming business</p></li>
+              
+            </ul>
+            
+          </div><!--End home-slider -->
+          
+        </div><!--End message-box -->
+        
+      </div><!--End container -->
+      
+    </header><!--End header -->
+
+    <!-- ==============================================
+    PORTFOLIO
+    =============================================== -->   
+    <section  id="portfolio">
+    
+      <div class="bg-light"><!--Start portfolio header -->
+      
+        <div class="container">
+            
+          <div class="section-header scrollimation fade-up">
+          
+            <div class="section-icon"><i class="fa fa-suitcase"></i></div>
+          
+            <h1 class="section-title">Portfolio</h1>
+            
+            <p class="section-description lead"> We are proud of what we have done. We are ready for the next big challenge. Yours!<br/> Take a look at our most recent projects.</p>
+            
+          </div><!--End section-header -->
+          
+          <!--==== Portfolio Filters ====-->
+          
+          <div id="filter-works" class="scrollimation fade-in">
+          
+            <ul data-filter="category">
+              <li class="active">
+                <a href="#" data-category="*">All Categories</a>
+              </li>
+              <li>
+                <a href="#" data-category=".sketching">Sketching</a>
+              </li>
+              <li>
+                <a href="#" data-category=".wireframes">Wireframes</a>
+              </li>
+              <li>
+                <a href="#" data-category=".analysis">Analysis</a>
+              </li>
+              <li>
+                <a href="#" data-category=".visualdesign">Visual Design</a>
+              </li>
+              <li>
+                <a href="#" data-category=".prototyping">Prototyping</a>
+              </li>
+              <li>
+                <a href="#" data-category=".coding">Coding</a>
+              </li>
+            </ul>
+            
+            <ul data-filter="type">
+              <li class="active">
+                <a href="#" data-type="*">All Types</a>
+              </li>
+              <li>
+                <a href="#" data-type=".production">Production</a>
+              </li>
+              <li>
+                <a href="#" data-type=".personal">Personal Project</a>
+              </li>
+            </ul>
+            
+          </div><!--End portfolio filters -->
+          
+          <p class="filter-results text-center"><span></span> Works match criteria</p>
+        
+        </div><!--End container -->
+      </div><!--End portfolio header -->
+      
+      
+      <!--==== Project Preview Panel (DO NOT REMOVE)====-->
+      
+      <div id="preview-scroll"></div>
+      <div id="preview-loader"></div>
+      
+      <div id="project-preview-wrapper">
+      <div id="project-preview">
+        
+        <div class="container">
+        
+          <div class="preview-header">
+            <h1 class="preview-title"></h1><span class="close-preview"><i class="fa fa-times"></i></span>
+          </div>
+        
+          <div class="row">
+          
+            <div id="preview-media" class="col-md-8"></div>
+            
+            <div id="preview-details" class="col-md-4">
+              <h2>Project Details</h2>
+              <ul></ul>
             </div>
-        </div>    
-
-        <div class="row">
-          <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="item active">
-                <img src="images/ux/Opening.png">
-
-                <div class="carousel-caption">
-                  <h2>It's 5pm and who's going to make dinner!?</h2>
-                  <p>This storyboard deals with a couple working together to overcome how to buy groceries to cook at home at the last minute</p>
+            
+          </div>
+          
+          <div id="preview-content" class="row"></div>
+        
+        </div><!--End container -->
+        
+      </div><!--End #project-preview panel-->
+      </div><!--End #project-preview-wrapper-->
+      
+      <div class="padding-bottom bg-light"><!--Start Projects Band-->
+      
+        <div class="container masonry-wrapper">
+        
+          <div id="projects-container" class="">
+          
+            <!-- ==============================================
+            FINANCIAL SERVICES PROJECT ITEM
+            =============================================== --> 
+            <article class="project-item production interviews analysis wireframes coding">
+              <a href="#">
+                <img class="img-responsive project-thumb" src="images/desktop/WPF-Flat.jpg"  alt=""><!--Project thumb -->
+                
+                <div class="details">
+                  <h3 class="project-title">Transforming business</h3><!--Project Title -->
+                  <small>Analysis, Wireframes, Interviews, Coding</small><!--Project Categories -->
                 </div>
-              </div>
-              <div class="item">
-                <img src="images/ux/Features.png">
-                <div class="carousel-caption">
-                  <h2>Time Saving Features</h2>
-                  <p>From meal idea recipes, item locators and self scanning, the app gives you the power to manage your instore experience</p>
+              </a>
+              <!--==== Project Preview ====-->
+              <div class="sr-only">
+                <div class="project-media" data-images="images/desktop/WPF-Flat.jpg"></div>
+                <div class="project-attributes">
+                  <div class="newline"><span>Date : </span>March 2012 - February 2014</div>
+                  <div class="newline"><span>Industry : </span>Investment Banking</div>
+                  <div class="newline"><span>Categories : </span>Analysis, Wireframes, Interviews, Coding</div>
                 </div>
-              </div>
-              <div class="item">
-                <img src="images/ux/Checkout.png">
-                <div class="container">
-                  <div class="carousel-caption">
-                    <h2>Be a Grocery Shopping Hero</h2>
-                    <p>By streamlining the process of finding food to checkout, the app will make you the grocery shopping hero in a flash</p>
+              
+                <div class="project-description">
+                
+                  <div class="col-md-4">
+                    <h2>The Challenge</h2>
+                    <p>The business was using spreadsheets to price bonds. This process was prone to delay of information in the event of someone forgetting to send an email with the updated spreadsheet. We were tasked to analyse the process, calculation and recommend and implement a solution that would improve the business.</p>
+
+                    <img src="images/FinanceWireframe-small.jpg" />
                   </div>
+                  
+                  <div class="col-md-4">
+                    <h2>The Solution</h2>
+                    <p>The final solution was a client/server application which allowed users to price bonds. This fulfilled the ability to have the process centralized and gave extra audit points around the process. I was responsible for creating and coding the UI using C# and WPF. The style was based on a flat theme.</p>
+
+                    <img src="images/usability-small.jpg" />
+                  </div>
+                  
+                  <div class="col-md-4">
+                    <h2>The Result</h2>
+                    <p>The initial pilot program proved to be useful for a large set of the full population of users. Work is still ongoing to improve the system and implement features such as reporting.</p>
+                  </div>
+                  
                 </div>
-              </div>
+              </div><!-- End Project Preview -->
+              
+            </article>
+            <!-- ==============================================
+            FINANCIAL SERVICES ITEM
+            =============================================== -->     
+
+            <!-- ==============================================
+            LOGO DESIGN PROJECT ITEM
+            =============================================== --> 
+            <article class="project-item production sketching visualdesign">
+              <a href="#">
+                <img class="img-responsive project-thumb" src="images/branding/RedSplash.jpg"  alt=""><!--Project thumb -->
+                
+                <div class="details">
+                  <h3 class="project-title">Envisioning the Future</h3><!--Project Title -->
+                  <small>Sketching, Visual Design</small><!--Project Categories -->
+                </div>
+              </a>
+              <!--==== Project Preview ====-->
+              <div class="sr-only">
+                <div class="project-media" data-images="images/branding/RedSplash.jpg"></div>
+                <div class="project-attributes">
+                  <div class="newline"><span>Date : </span>July 2013</div>
+                  <div class="newline"><span>Industry : </span>Investment Banking</div>
+                  <div class="newline"><span>Categories : </span>Sketching, Visual Design</div>
+                </div>
+              
+                <div class="project-description">
+                
+                  <div class="col-md-4">
+                    <h2>The Challenge</h2>
+                    <p>The client was looking to update their logo to reflect the new technologies that would be used in the new system. They wanted something that had a nice visual impact for the end users.</p>
+                    <img src="images/logo-sketch.jpg" width="60%" style="margin-left:60px" />
+                  </div>
+                  
+                  <div class="col-md-4">
+                    <h2>The Process</h2>
+                    <p>Initial ideas ranged from different people voicing different desires. Using that as a base, I created some quick logos and showed them around to the team. General feedback was used to pick the winner from the pack.</p>
+                    <p>One of the favourite design was to have the ICE cube logo to look like a shield. However with the lack of brand colour and feel of a financial system this design was scraped.</p>
+                    <img src="images/branding/logoexamples.png" width="100%"/>
+                  </div>
+                  
+                  <div class="col-md-4">
+                    <h2>The Result</h2>
+                    <p>The final design is shown below with the red background. This fits more inline with the client's brand colours. The mountains are a functional design additive as it provides visual appeal but also simulates charts and graphs that appear in the system.</p>
+                    <img src="images/branding/RedSplash.jpg" width="100%"/>
+                  </div>
+                  
+                </div>
+              </div><!-- End Project Preview -->
+              
+            </article>
+            <!-- ==============================================
+            LOGO DESIGN ITEM
+            =============================================== -->       
+            
+            <!-- ==============================================
+            SURVEY ITEM
+            =============================================== --> 
+            <article class="project-item production analysis">
+              <a href="#">
+                <img class="img-responsive project-thumb" src="images/CardSortQuestions.jpg"  alt=""><!--Project thumb -->
+                
+                <div class="details">
+                  <h3 class="project-title">Asking the right Questions</h3><!--Project Title -->
+                  <small>Analysis, Interviews</small><!--Project Categories -->
+                </div>
+              </a>
+              <!--==== Project Preview ====-->
+              <div class="sr-only">
+                <div class="project-media" data-images="images/CardSortQuestions.jpg"></div>
+                <div class="project-attributes">
+                  <div class="newline"><span>Date : </span>June 2012 - August 2012</div>
+                  <div class="newline"><span>Industry : </span>Human Resources</div>
+                  <div class="newline"><span>Categories : </span>Analysis, Interviews</div>
+                </div>
+              
+                <div class="project-description">
+                
+                  <div class="col-md-4">
+                    <h2>The Challenge</h2>
+                    <p>There was a perception of low employee engagement within our company. Different strategies were being implemented and pushed by management but they didn't seem to be working well. What could be done to improve this environment?</p>
+                  </div>
+                  
+                  <div class="col-md-4">
+                    <h2>The Solution</h2>
+                    <p>I teamed up with a colleague to help investigate and analyze the issue of with employee satisfaction. Instead of guessing about what the problem was, we decided to conduct interviews employees to find out how they were feeling. To come up with the questions we each came up with questions we thought were important then we grouped them together using card sorting.</p>
+                  </div>
+                  
+                  <div class="col-md-4">
+                    <h2>The Result</h2>
+                    <p>We interviewed 20 consultants on our own time before work or over our lunch break. The results of the survey lead to some changes in training initiatives and helped upper management understand the problem better.</p>
+                  </div>
+                  
+                </div>
+              </div><!-- End Project Preview -->
+              
+            </article>
+            <!-- ==============================================
+            SURVEY ITEM
+            =============================================== -->   
+
+            <!-- ==============================================
+            GROCERS ITEM
+            =============================================== --> 
+            <article class="project-item personal wireframes prototyping">
+              <a href="#">
+                <img class="img-responsive project-thumb" src="images/ModernGrocersMap-small.png"  alt=""><!--Project thumb -->
+                
+                <div class="details">
+                  <h3 class="project-title">Everyday solutions</h3><!--Project Title -->
+                  <small>Wireframes, Prototyping</small><!--Project Categories -->
+                </div>
+              </a>
+              <!--==== Project Preview ====-->
+              <div class="sr-only">
+                <div class="project-media" data-images="images/ux/Opening.png,images/ModernGrocersMap-small.png"></div>
+                <div class="project-attributes">
+                  <div class="newline"><span>Date : </span>January 2014</div>
+                  <div class="newline"><span>Industry : </span>Retail</div>
+                  <div class="newline"><span>Categories : </span>Wireframes, Prototyping</div>
+                  <div class="newline"><span>Website : </span><a href="http://indigo.infragistics.com/prototype/WY6ENQEM?highlight=1" target="_blank">Demo Prototype</a></div>
+                </div>
+              
+                <div class="project-description">
+                
+                  <div class="col-md-4">
+                    <h2>The Challenge</h2>
+                    <p>The hours between 4pm to 7pm at a grocery store can be quite daunting with the number of people and with rushing around it is easy to miss an ingredient or two. </p>
+
+                    <p>For a PDF version of this storyboard please <a href="http://designinglogic.files.wordpress.com/2014/02/storyboard.pdf" target="_blank">click this link</a></p>
+                  </div>
+                  
+                  <div class="col-md-4">
+                    <h2>The Solution</h2>
+                    <p>In this concept story we have, Richard and Olivia, a couple living in the big city. Richard is an architect and Olivia is an accountant. As young professionals living in the city, a midweek homemade dinner at home can be challenging due to the lack of time. We follow their process in this story to see how they use this app to get their dinner for the night. This app aims to make the process of grocery shopping more efficient.</p>
+
+                    <p>For the <a href="http://designinglogic.files.wordpress.com/2014/02/moderngrocerswireframes.pdf" target="_blank">complete wireframes (1.5MB)</a> provide a clearer insight of the individual screens of the application</p>
+                  </div>
+                  
+                  <div class="col-md-4">
+                    <h2>The Result</h2>
+                    <p>The app prototype allows for a tangible asset that people can experiment with to get further feedback. There is currently a similar concept that is being trialled in select supermarkets in London as of November 2013.</p>
+                  </div>
+                  
+                </div>
+              </div><!-- End Project Preview -->
+              
+            </article>
+            <!-- ==============================================
+            GROCERS
+            =============================================== --> 
+
+            <!-- ==============================================
+            PLANBOW
+            =============================================== --> 
+            <article class="project-item personal sketching wireframes prototyping coding">
+              <a href="#">
+                <img class="img-responsive project-thumb" src="images/web/planbow.jpg"  alt=""><!--Project thumb -->
+                
+                <div class="details">
+                  <h3 class="project-title">Simplifying Ideas</h3><!--Project Title -->
+                  <small>Sketching, Wireframes, Prototyping, Coding</small><!--Project Categories -->
+                </div>
+              </a>
+              <!--==== Project Preview ====-->
+              <div class="sr-only">
+                <div class="project-media" data-images="images/Planbow-Sketches.jpg,images/Planbow-Composites.jpg,images/web/planbow.jpg,images/web/LondonRestos.jpg"></div>
+                <div class="project-attributes">
+                  <div class="newline"><span>Date : </span>November 2012</div>
+                  <div class="newline"><span>Industry : </span>Mobile</div>
+                  <div class="newline"><span>Categories : </span>Sketching, Wireframes, Prototyping, Coding</div>
+                  <div class="newline"><span>Website : </span><a href="http://planbow.azurewebsites.net/Labs/LondonRestos" target="_blank">Proof of Concept</a></div>
+                </div>
+              
+                <div class="project-description">
+                
+                  <div class="col-md-4">
+                    <h2>The Challenge</h2>
+                    <p>Finding new things to do or chaining events together for a perfect birthday or date is hard if you have to travel around to much. You have to search multiple websites to get ideas for dinner and another for things to do. Can there be only one place to go?</p>
+                  </div>
+                  
+                  <div class="col-md-4">
+                    <h2>The Solution</h2>
+                    <p><a href="http://planbow.azurewebsites.net/" target="_blank">Planbow</a> was my idea to create a service that aggregates Foursquare data to prove you with the best options for your activities. This was a proof of concept to see how Azure websites work and how to integrate with MapBox and Foursquare APIs by using KnockoutJS.</p>
+                  </div>
+                  
+                  <div class="col-md-4">
+                    <h2>The Result</h2>
+                    <p>I created this map of my recently visisted restaurants back in 2012. It was well received by friends but gathering content for the site turned out to be a difficult task to sustain to build more material.</p>
+                  </div>
+                  
+                </div>
+              </div><!-- End Project Preview -->
+              
+            </article>
+            <!-- ==============================================
+            PLANBOW
+            =============================================== --> 
+
+            <!-- ==============================================
+            PRESENTATION
+            =============================================== --> 
+            <article class="project-item personal presentation">
+              <a href="#">
+                <img class="img-responsive project-thumb" src="images/PresentationOutside.jpg"  alt="Presentation"><!--Project thumb -->
+                
+                <div class="details">
+                  <h3 class="project-title">Presenting Ideas</h3><!--Project Title -->
+                  <small>Presentations</small><!--Project Categories -->
+                </div>
+              </a>
+              <!--==== Project Preview ====-->
+              <div class="sr-only">
+                <div class="project-media" data-video='<iframe src="http://player.vimeo.com/video/62574914" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'></div>
+                <div class="project-attributes">
+                  <div class="newline"><span>Date : </span>November 2012</div>
+                  <div class="newline"><span>Industry : </span>Social Media</div>
+                  <div class="newline"><span>Categories : </span>Presentations</div>
+                </div>
+              
+                <div class="project-description">
+                
+                  <div class="col-md-6">
+                    
+                    <h2>The Challenge</h2>
+                    <p>To build my skills in public speaking, I volunteered to be part of the <a href="http://ignitelondon.net/" target="_blank">Ignite London #7</a> event in Shoreditch, London to speak about “<a href="http://vimeo.com/62574914" target="_blank">Why we take pictures of food</a>”. This talk was based on the Ignite presentation method of 20 auto-rotating slides in 5 minutes.</p>
+                    <img src="images/PresentationOutside.jpg" width="100%" />
+                  </div>
+                  
+                  <div class="col-md-6">
+                    
+                    <h2>The Solution</h2>
+                    <p>With slides changing automatically every 20 seconds, you have to have a clear concept and flow to your delivery. Using chunking methods I was able to group and organize the information in an entertaining way for telling a story</p>
+                    <img src="images/SharePics-sketch.jpg" width="100%" />
+                  </div>                  
+                </div>
+              </div><!-- End Project Preview -->
+              
+            </article>
+            <!-- ==============================================
+            PRESENTATION
+            =============================================== --> 
+            
+          </div><!-- End #projects-container --> 
+          
+        </div><!-- End container --> 
+        
+      </div><!--End Projects Band-->
+      
+    </section><!-- End portfolio section -->
+    
+    <!-- ==============================================
+    ABOUT
+    =============================================== -->
+    <section id="about" class="padding-bottom bg-light">
+    
+      <div class="container">
+          
+        <div class="section-header scrollimation fade-up">
+        
+          <div class="section-icon"><i class="fa fa-user"></i></div>
+        
+          <h1 class="section-title">About Me</h1>
+          
+          <p class="section-description lead">I graduated Computer Engineering from the University of Waterloo and since then I have been fortunate enough to have worked in New York, NY and London, UK. Below are a few of the companies I have had the pleasure of working at:</p>
+
+          <div class="row">
+            <div class="col-md-2 col-md-offset-1">
+              <a href="http://infusion.com/" target="_blank">
+                <img src="images/company/infusion.png" width="100%" style="max-width:190px"/>
+              </a>
             </div>
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-          </div><!-- /.carousel -->
-        </div><!-- row -->
+            <div class="col-md-2">
+              <a href="http://www.hsbcnet.com/" target="_blank">
+                <img src="images/company/hsbc.png" width="100%" style="max-width:190px"/>
+              </a>
+            </div>
+            <div class="col-md-2">
+              <a href="https://www.credit-suisse.com/investment_banking/en/index.jsp" target="_blank">
+                <img src="images/company/creditsuisse.png" width="100%" style="max-width:190px"/>
+              </a>
+            </div>
+            <div class="col-md-2">
+              <a href="http://group.barclays.com/home" target="_blank">
+                <img src="images/company/barclays.png" width="100%" style="max-width:190px"/>
+              </a>
+            </div>
+            <div class="col-md-2">
+              <a href="http://www.tmmc.ca/en/index.html" target="_blank">
+                <img src="images/company/toyota.png" width="100%" style="max-width:190px"/>
+              </a>
+            </div> 
+          </div>
 
-        <div class="row" style="margin-top:-6%">
-          <h3>Storyboarding</h3>
-          <p>
-          The hours between 4pm to 7pm at a grocery store can be quite daunting with the number of people and with rushing around it is easy to miss an ingredient or two. This app aims to make the process of grocery shopping more efficient.
-          </p>
-          <p>
-          In this concept story we have, Richard and Olivia, a couple living in the big city. Richard is an architect and Olivia is an accountant. As young professionals living in the city, a midweek homemade dinner at home can be challenging due to the lack of time. We follow their process in this story to see how they use this app to get their dinner for the night.
-          </p>              
-          <p>For a PDF version of this storyboard please <a href="http://designinglogic.files.wordpress.com/2014/02/storyboard.pdf" target="_blank">click this link</a><br /><br /></p>
+          <p class="section-description lead"><br /><br />I write on topics relating to the world of design and work life on my personal blog, "<a href="http://designinglogic.wordpress.com" target="_blank">Designing Logic</a>"</p>
+          
+          <p class="section-description lead">I am always looking for opportunities to help people interact with technology better. For a few months I volunteered in an after school activity to teach kids ages 9-11 how to code as part of the <a href="https://www.codeclub.org.uk/" target="_blank">Code Club</a> program.</p>
+
+        </div><!--End section-header -->
+        
+      </div><!--End container -->
+      
+    </section><!--End about section-->
+
+    
+
+    <!-- ==============================================
+    SOCIAL LINKS
+    =============================================== --> 
+    <section id="social-links" class="bg-transparent">
+      
+      <div id="contact" class="container">
+        <div class="section-header scrollimation fade-up">
+        
+          <h1 class="section-title">Contact</h1>
+        
+
+          <ul>
+            <li>
+              <a href="mailto:le.michael@gmail.com" target="_blank" class="icon"><i class="fa fa-envelope"></i></a>
+              <h4>Write me an email</h4>
+            </li>
+            <li>
+              <a href="http://uk.linkedin.com/in/lifeofmle/" target="_blank" class="icon"><i class="fa fa-linkedin"></i></a>
+              <h4>Connect on LinkedIn</h4>
+            </li>
+            <li>
+              <a href="https://twitter.com/lifeofmle" target="_blank" class="icon"><i class="fa fa-twitter"></i></a>
+              <h4>Follow me on Twitter</h4>
+            </li>
+            <li>
+              <a href="http://instagram.com/lifeofmle" target="_blank" class="icon"><i class="fa fa-instagram"></i></a>
+              <h4>See me on Instagram</h4>
+            </li>
+          </ul>
         </div>
-
-				<!-- End of Modern Grocers -->
-
-				<!-- Start of Planbow -->
-				<div id="planbow">
-					<div class="page-header">
-						<h2>Planbow: App Concept</h2><h4 class="pull-right"><small>Skills</small> Sketching, Composites, Prototyping</h4>
-					</div>
-
-					<div class="row">
-						<div class="col-md-6">
-							<a href="http://planbow.azurewebsites.net/" target="_blank">
-							<img src="images/web/planbow.jpg" width="100%" />
-							</a>
-
-							<h3>The Idea</h3>
-							<p>Finding new things to do or chaining events together for a perfect birthday or date is hard if you have to travel around to much. <a href="http://planbow.azurewebsites.net/" target="_blank">Planbow</a> was my idea to create a service that aggregates Foursquare data to prove you with the best options for your activities. I needed to create a proof of concept to see if this was viable.</p>
-
-							
-						</div>
-
-						<div class="col-md-6">
-							<a href="http://planbow.azurewebsites.net/Labs/LondonRestos" target="_blank">
-							<img src="images/web/LondonRestos.jpg" width="100%"/>
-							</a>
-
-							<h3>Proof of Concept</h3>
-							<p>London's restaurant scene is alive and well. Finding where to go eat in London can be a challenge due to the number of restaurants. I created this map of my recently visisted restaurants back in 2012. This was a proof of concept to see how Azure websites work and how to integrate with MapBox and Foursquare APIs by using KnockoutJS</p>
-							
-						</div>
-					</div><!-- /.row -->
-
-					<div class="row">
-						<div class="col-md-6">
-							<img src="images/Planbow-Sketches.jpg" width="100%" style="margin-top:10px;" />
-
-							<h3>Sketches</h3>
-							<p>Sketches allow your ideas to materialize quickly. Annotations on the sketches help the team formulate the final concepts when taking it to the next level of wireframing/prototyping.</p>
-						</div>
-
-						<div class="col-md-6">
-							<img src="images/Planbow-Composites.jpg" width="100%" />
-
-							<h3>Composites</h3>
-							<p>Using Photoshop, I created sample screens in the application colour scheme. This allows people/stakeholders to asset the concept in higher fidelity.</p>
-							
-						</div>
-					</div><!-- /.row -->
-				<!-- End of Planbow -->
-				</div>
-
-				<!-- Start of User Research -->
-				<div id="userResearch">
-					<div class="page-header">
-						<h2>User Research</h2><h4 class="pull-right"><small>Skills</small> Analysis, Card Sorting, Interviews</h4>
-					</div>
-
-					<div class="row">
-						<div class="col-md-6">
-								<br /><br />
-								<img src="images/CardSortQuestions.jpg" width="100%" />
-								<br />
-								<h3>Employee Improvement Survey</h3>
-								<p>I teamed up with a colleague to help investigate and analyze the issue of with employee satisfaction. Instead of guessing about what the problem was, we decided to conduct interviews with the 20 employees to find out how they were feeling. To come up with the questions we each came up with questions we thought were important then we grouped them together using card sorting. The results of the survey lead to some changes in training initiatives and helped upper management understand the problem better.
-								</p>
-							</div>
-
-							<div class="col-md-6">
-								<img src="images/usability.png" style="max-width:250px; margin-left: 100px;"/>
-
-								<h3>Application Usability Research</h3>
-								<p>To validate the changes in the pilot program of the pricing system, surveys with 10 users were done. A set questionaire based on the likert scale was asked after each person completed the three (3) main user journeys in the application. The three journeys were setup, pricing and report generation. The results of the research resulted in simplifying the workflow and securing extra work to provide more user feedback on their actions as confirmation.</p>
-								
-							</div>
-					</div>
-
-				</div>
-				<!-- End of User Research -->
-
-        <div class="jumbotron jumbotronPageHeader">
-          <div class="container">
-            <div class="row">
-              <blockquote class="pull-right">
-                <br />
-          <p>No one can remember more than three points.</p>
-          <small class="quoteAuthor">Philip Crosby</small>
-        </blockquote>
-        <h1>Presentations</h1>
+      </div><!--End container -->
+      
+    </section><!--End skills section -->
+    
+    <!-- ==============================================
+    FOOTER
+    =============================================== --> 
+    <footer id="main-footer">
+    
+      <div class="container">
+      
+        <div class="row">
+        
+          <div class="col-sm-6 left-col">
+            <p><span>Michael Le - UX Portfolio</span> 2014</p>
           </div>
+          
+          <div class="col-sm-6 right-col">
+            <img src="images/logo/Icon-36x36@2x.png" alt="Michael Le">            
           </div>
-        </div>
-
-				<!-- Start of Presentation -->
-				<div id="presentation">
-					<div class="page-header">
-						<h2>Ignite London #7 - Shoreditch</h2><h4 class="pull-right"><small>Skills</small> Public Speaking</h4>
-					</div>
-
-					<div class="row">
-						<div class="col-md-6 col-md-offset-2">
-							<iframe src="//player.vimeo.com/video/62574914" width="600" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-						</div>
-					</div><!-- /.row -->
-
-					<div class="row">
-						<div class="col-md-6">
-
-							<img src="images/PresentationOutside.jpg" width="100%" style="margin-top:10px;" />
-
-							<h3>The Idea</h3>
-							<p>To build my skills in public speaking, I volunteered to be part of the <a href="http://ignitelondon.net/" target="_blank">Ignite London #7</a> event in Shoreditch, London to speak about “<a href="http://vimeo.com/62574914" target="_blank">Why we take pictures of food</a>”. This talk was based on the Ignite presentation method of 20 auto-rotating slides in 5 minutes.</p>
-
-							
-						</div>
-
-						<div class="col-md-6">
-							<br /><br /><br /><br />
-							<img src="images/SharePics-sketch.jpg" width="100%" />
-
-							<h3>Planning</h3>
-							<p>With slides changing automatically every 20 seconds, you have to have a clear concept and flow to your delivery. Using chunking methods I was able to group and organize the information in an entertaining way for telling a story</p>
-							
-						</div>
-					</div><!-- /.row -->
-					
-				</div>
-				<!-- End of Presentation -->
-
-        <div class="jumbotron jumbotronPageHeader">
-          <div class="container">
-            <div class="row">
-              <blockquote class="pull-right">
-                <br />
-          <p>Good design is good business</p>
-          <small class="quoteAuthor">Thomas Watson</small>
-        </blockquote>
-        <h1>Branding</h1>
-          </div>
-          </div>
-        </div>
-
-				<!-- Start of Logo Design -->
-				<div id="logoDesign">
-					<div class="page-header">
-						<h2>Logo Design</h2><h4 class="pull-right"><small>Skills</small> Visual Design</h4>
-					</div>
-
-					<div class="row">
-			        <div class="col-md-3">
-			        	<br />
-			        	<img src="images/logo-sketch.jpg" width="60%" style="margin-left:60px" />
-			        	<br />
-			        	<h3>Sketching</h3>
-						<p>Initial ideas ranged from different people voicing different desires. Using that as a base, I created some quick logos and showed them around to the team. General feedback was used to pick the winner from the pack.</p>
-						
-			        </div>
-			        <div class="col-md-3">
-			        	<br /><br />
-			        	<a href="http://designinglogic.files.wordpress.com/2014/01/logoexamples.png">
-							<img class="aligncenter size-full wp-image-430" alt="LogoExamples" src="http://designinglogic.files.wordpress.com/2014/01/logoexamples.png" 
-							width="100%" />
-						</a> 
-						<br /><br />
-			          <h3>Iterative</h3>
-			          <p>One of the favourite design was to have the ICE cube logo to look like a shield. However with the lack of brand colour and feel of a financial system this design was scraped.</p>
-			          
-			        </div>
-
-			        <div class="col-md-5">
-			        	<a href="images/branding/RedSplash.png">
-						<img src="images/branding/RedSplash.jpg" width="100%"/>
-					  </a>
-			          <h3>Final Product</h3>
-			          <p>The final design is shown below with the red background. This fits more inline with the client's brand colours. The mountains are a functional design additive as it provides visual appeal but also simulates charts and graphs that appear in the system.</p>
-			          
-			        </div>
-			    </div><!-- /.row -->
-					
-				</div>
-				<!-- End of Logo Design -->
-
-				<!-- Start of Play -->
-				<!-- <div id="play">
-					<div class="page-header">
-						<h2>Play</h2><h4 class="pull-right"><small>Skills</small> Visual Design</h4>
-					</div>
-
-					<div class="row">
-						<div class="col-md-3">
-							<img src="images/deadmau5.jpg" width="100%" style="margin-top:10px;" />
-
-							<h3>Cakes</h3>
-							<p>Sketches allow your ideas to materialize quickly. Annotations on the sketches help the team formulate the final concepts when taking it to the next level of wireframing/prototyping.</p>
-						</div>
-
-						<div class="col-md-9">
-
-							<h3>London Marathon 2012</h3>
-							<p></p>
-							
-						</div>
-					</div>
-					
-				</div> -->
-
-				<!-- End of Play -->
-      </div>
-			</div>
-			<!-- End of Portfolio -->
-
-			<!-- Start of Contact -->
-
-			<div id="contact">
-				<div class="container">
-					<h2>Contact</h2>					
-				</div>
-				<div class="container">
-					<div class="jumbotron jumbotronAbout">    
-						<div class="row">
-							<div class="col-md-8 col-md-offset-2">
-								<h2 class="mainH2 shadow">Coder. Creative. Designer.</h2>
-							</div>
-						</div> 
-
-						<div class="row">
-							<div class="col-md-3 col-md-offset-2">
-								<span>
-									<br />
-									<p class="shadow" style="color:white">Contact me on</p>
-									<a href="mailto:le.michael@gmail.com" target="_blank">
-										<span class="icon-stack">
-											<i class="icon-circle icon-stack-base"></i>
-											<i class="icon-envelope icon-light"></i>
-										</span><span class="shadow" style="color:white">Email</span></a><br />
-									<a href="http://uk.linkedin.com/in/lifeofmle/" target="_blank">
-										<span class="icon-stack">
-											<i class="icon-circle icon-stack-base"></i>
-											<i class="icon-linkedin icon-light"></i>
-										</span><span style="color:white">LinkedIn</span></a><br />
-									<a href="https://twitter.com/lifeofmle" target="_blank">
-										<span class="icon-stack">
-											<i class="icon-circle icon-stack-base"></i>
-											<i class="icon-twitter icon-light"></i>
-										</span><span class="shadow" style="color:white">Twitter</span></a><br />
-									<a href="http://instagram.com/lifeofmle" target="_blank">
-										<span class="icon-stack">
-											<i class="icon-circle icon-stack-base"></i>
-											<i class="icon-instagram icon-light"></i>
-										</span><span class="shadow" style="color:white">Instagram</span></a>
-								</span>
-							</div>
-
-							<div class="col-md-3 col-md-offset-3">
-								<span>
-									<br />
-									<br />
-									<br />
-									<br />
-									<img src="images/logo/Icon-72x72@2x.png" width="100%" style="max-width:72px;margin-left:10px;border-style:solid;border-color:white;border-width:2px"/>
-								</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- End of Contact -->
-	
-		</div> <!-- wrap -->
+          
+        </div><!-- End row -->
+        
+      </div><!-- End container -->
+      
+    </footer><!-- End footer -->
 
 
-	<!-- Javascript -->
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="js/jquery-1.11.0.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/bootstrap.min.js"></script>
+	<!-- ==============================================
+  SCRIPTS
+  =============================================== --> 
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.8.2.min.js">\x3C/script>')</script>
 
-	<!-- Custom Javascript -->
-
-	<script>
-		$('.carousel').carousel({
-			interval: false,
-			cycle: false
-		})
-	</script>
-
-	<!-- End of Custom Javascript -->
+  <script src="js/libs/bootstrap.min.js"></script>
+  <script src='js/jquery.scrollto.js'></script>
+  <script src='js/jquery.flexslider.min.js'></script>
+  <script src='js/twitterFetcher_v10_min.js'></script>
+  <script src='js/jquery.fitvids.js'></script>
+  <script src='js/jquery.masonry.min.js'></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/jquery.backstretch.min.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/shapes.js"></script>
 
 	</body>
 </html>
