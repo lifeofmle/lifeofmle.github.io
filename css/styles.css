@@ -1398,6 +1398,11 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
         padding-top:20px;
         padding-bottom:20px;
     }
+
+    .add-padding-side {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
     
     .big-text{
         font-size:38px;
@@ -1539,5 +1544,10 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     
     .project-item .hover-mask .project-title {
         margin-top:70px;
+    }
+
+    .add-padding-side {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 } 
