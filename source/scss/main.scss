@@ -1,0 +1,23 @@
+@import 'susy/language/susy';
+
+$susy: (
+  columns: 12,
+  math: fluid,
+);
+
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+section {
+	@include container(80em);
+}
+
+.hero {
+	@include span(isolate 6 at 4);
+}
