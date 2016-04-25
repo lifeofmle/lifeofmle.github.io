@@ -14,9 +14,9 @@
     Favicons
     =============================================== -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
-    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" href="assets/images/logo/Icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/logo/Icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/logo/Icon-228x228.png">
     
     <!-- ==============================================
     CSS
@@ -26,14 +26,8 @@
     <!-- ==============================================
     Fonts
     =============================================== -->
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700' rel='stylesheet' type='text/css'>
-    <!-- ==============================================
-    JS
-    =============================================== -->
-      
-    <!--[if lt IE 9]>
-      <script src="assets/js/libs/respond.min.js"></script>
-    <![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
     <!-- Google Analytics -->
     <script>
@@ -49,68 +43,57 @@
   </head>
   
   <body>
-     
-    <!-- ==============================================
-    MAIN NAV
-    =============================================== -->
-    <div id="main-nav" class="navbar navbar-fixed-top">
-      <div class="container">
-      
-        <div class="navbar-header">
-        
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
-            <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-          </button>
-          
+    <nav> 
+      <div class="content">     
+        <div class="navbar-header">     
           <!-- ======= LOGO ========-->
-          <a class="navbar-brand" href="http://lifeofmle.com"><img src="assets/images/logo/Icon-57x57.png" alt="Michael Le"/>Michael Le</a>
-        
-        </div>
-        
-        <div id="site-nav" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="sr-only">
-              <a href="#home" class="plain scrollto">Home</a>
-            </li>
-            <li>
-              <a href="#services" class="plain scrollto">About Me</a>
-            </li>
-            <li>
-              <a href="#portfolio" class="plain scrollto">My Work</a>
-            </li>
-            <li>
-              <a href="#contact" class="plain scrollto">Contact</a>
-            </li>
-            <li>
-              <a href="http://lifeofmle.com/now" class="plain">Now</a>
-            </li>
-            <li>
-              <a href="https://designinglogic.wordpress.com/" target="_blank" class="plain">Blog</a>
-            </li>
-          </ul>
-        </div><!--End navbar-collapse -->
-        
-      </div><!--End container -->
-      
-    </div><!--End main-nav -->
+          <a class="navbar-brand" href="http://lifeofmle.com"><img class="logo" src="assets/images/logo/Icon-57x57.png" alt="Michael Le"/>Michael Le</a>
+
+          <button type="button" class="navbar-toggle">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </button>    
+        </div>      
+
+        <ul class="navbar-menu">
+          <li class="sr-only">
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#background">About Me</a>
+          </li>
+          <li>
+            <a href="#portfolio">My Work</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li>
+            <a href="http://lifeofmle.com/now">Now</a>
+          </li>
+          <li>
+            <a href="https://designinglogic.wordpress.com/" target="_blank">Blog</a>
+          </li>
+        </ul>    
+      </div>  
+    </nav>
     
     <!-- HERO -->
-    <section id="home">
-      <div class="hero">               
-        <h1>Hello</h1> 
+    <section id="intro">
+      <div class="content">               
+        <h1 class="large">Hello</h1> 
 
-        <p>My name is Michael Le</p>
-        <br />
-        <h3>I help shape and transform ideas into reality by designing both online and offline user experiences</h3>
+        <p class="lead">My name is Michael Le</p>
 
-        <h3>My coding background helps me understand the technical aspects of a project. It also gives me greater flexibility when prototyping solutions.</h3>
+        <p>I help shape and transform ideas into reality by designing both online and offline user experiences</p>
+
+        <p>My coding background helps me understand the technical aspects of a project. It also gives me greater flexibility when prototyping solutions.</p>
       </div>      
     </section>
     
-    <!-- SERVICES -->
-    <section id="services">
-      <div>        
-        <h2>Code meets design</h2>        
+    <!-- BACKGROUND -->
+    <section id="background">    
+      <div class="content">
+        <h1>Code meets design</h1>        
        
         <p class="lead">I graduated from the University of Waterloo in Computer Engineering and since then I have been working in New York, NY and London, UK.</p>
 
@@ -129,20 +112,25 @@
       
     <!-- PORTFOLIO -->
     <section id="portfolio">    
-      <div class="portfolio-intro">        
-        <h2>My Work</h2>
+      <div class="portfolio-intro">  
+        <div class="content">      
+          <h1>My Work</h1>
 
-        <p class="lead text-center">Design thinking is the process to find solutions</p>
+          <p class="lead">Design thinking is the process to find solutions</p>
 
-        <p>Although I am an UX designer Omnigraffle and Axure are not the only tools I use. I am always armed with markers and post-it notes for workshops and meetings. I love using Sketch for visual designs. I enjoy paper sketching and Balsamiq for low fidelity concepts. Omnigraffle and Indigo are my tools of choice for wireframing. When it comes to prototyping I like to use the best tool for the job; Axure for simple interactions, Pixate for complex concepts and native code for higher fidelity. I am able to code for the web, Android, and C#/WPF.</p>
+          <p>Although I am an UX designer Omnigraffle and Axure are not the only tools I use. I am always armed with markers and post-it notes for workshops and meetings. I love using Sketch for visual designs. I enjoy paper sketching and Balsamiq for low fidelity concepts. Omnigraffle and Indigo are my tools of choice for wireframing. When it comes to prototyping I like to use the best tool for the job; Axure for simple interactions, Pixate for complex concepts and native code for higher fidelity. I am able to code for the web, Android, and C#/WPF.</p>
 
-        <p>Below is a collection of my work which uses these tools alongside my design process.</p>        
+          <p>Below is a collection of my work which uses these tools alongside my design process.</p>        
+        </div>
       </div>
 
-      <div class="portfolio-project">          
-          <img class="project-image" src="assets/images/Fashion-screens.png" alt="" />         
+      <div class="project telegraph">     
+        <div class="content">     
+          <div class="project-image">
+            <img src="assets/images/Fashion-screens.png" alt="Telegraph Fashion" > 
+          </div>        
           <div class="project-info">          
-            <h1 class="medium-text">Design for the masses</h1>
+            <h2>Design for the masses</h2>
             
             <p class="lead">Redesigning the Telegraph website</p>
           
@@ -150,22 +138,24 @@
 
             <a href="http://www.telegraph.co.uk/fashion" target="_blank"><button class="btn-portfolio">View website</button></a>          
           </div>
+        </div>
       </div>
-
     
-      <div class="portfolio-project">          
-          <img class="project-image" src="assets/images/PortfolioReportSketch.png" alt="Portfolio Report" />          
-          
+      <div class="project investment">    
+        <div class="content"> 
+          <div class="project-image">     
+            <img src="assets/images/PortfolioReportSketch.png" alt="Portfolio Report" >   
+          </div>
           <div class="project-info">          
-            <h1 class="medium-text">Simplify complex data</h1>
+            <h2>Simplify complex data</h2>
             
             <p class="lead">Designing investment portfolio reports for the retail users</p>
           
             <p>I designed asset management websites and researched into financial technology innovations while working at <a href="http://www.tobiasandtobias.com/" target="_blank">Tobias &amp; Tobias</a>. Simplifying and restructuring data so that all investors can understand was a common challenge.</p>
 
-            <button class="btn-portfolio" onclick="$('.project1-extra').slideToggle();">Read More</button>
+            <button>Read More</button>
 
-            <div class="project-details">
+            <div class="details">
               <hr />
               <h3>The Challenge</h3>
               <p>There are 23 million do-it-yourself (DIY) investors in the UK and a common tool they use to monitor their investments is the portfolio report. These are often static paper or pdf reports, or webpages behind a user log-in, linked to via a monthly, quarterly or annual email or letter.</p>
@@ -200,25 +190,24 @@
               </p>              
             </div>          
           </div>
+        </div>
       </div>
 
-      <div class="row bg-project2 add-padding-sm">
-        <div class="col-sm-3 col-sm-offset-1 scrollimation fade-up">
-          
-            <img class="img-responsive" src="assets/images/WPF-Applications.png" alt="" />
-          
+      <div class="project banking">
+        <div class="content">  
+          <div class="project-image">
+            <img src="assets/images/WPF-Applications.png" alt="" >
           </div>
+          <div class="project-info">
           
-          <div class="col-sm-7 add-padding-side">
-          
-            <h1 class="medium-text">Enterprise applications</h1>
+            <h2>Enterprise applications</h2>
             <p class="lead">Designing and building real time financial trading software</p>
             
             <p>I have spent 7 years working in the investment banking industry. My main role was with designing and implementing front office trading applications. The various titles I held include C#/WPF developer, team lead, designer, and UX consultant.</p>
           
-            <button class="btn-portfolio" onclick="$('.project2-extra').slideToggle();">Read More</button>
+            <button>Read More</button>
 
-            <div class="project2-extra hidden-content">
+            <div class="details">
               <hr />
               <h3>The Challenge</h3>
 
@@ -242,24 +231,29 @@
             </div>
           
           </div>
+        </div>
       </div>
 
-      <div class="row bg-project3">
-        <div class="col-sm-3 col-sm-offset-1 scrollimation fade-up">          
-          <img class="img-responsive align-bottom" src="assets/images/PandaPay-Mobile.png" alt="PandaPay"/>        
-        </div>
+      <div class="project pandapay"> 
+        <div class="content">   
+          <div class="project-image">
+            <img 
+                src="assets/images/PandaPay-Mobile.png" 
+                alt="PandaPay">  
+          </div>
+                
           
-          <div class="col-sm-7 add-padding-sm add-padding-side">
+          <div class="project-info">
           
-            <h1 class="medium-text">Mobile payments</h1>
+            <h2>Mobile payments</h2>
             
             <p class="lead">Paying for your meal should be as enjoyable as your meal itself</p>
           
             <p><a href="http://pandapayapp.com" target="_blank">PandaPay</a> is a startup company dedicated to simplifying the process of bill splitting when eating out as group. I am helping the team by overseeing the UX of the app.</p>
 
-            <button class="btn-portfolio" onclick="$('.project3-extra').slideToggle();">Read More</button>
+            <button>Read More</button>
 
-            <div class="project3-extra hidden-content">
+            <div class="details">
               
               <hr/>
               
@@ -287,26 +281,25 @@
             </div>
           
           </div>
+        </div>
       </div>
 
-      <div class="row bg-project4">
-        <div class="col-sm-3 col-sm-offset-1 scrollimation fade-up">
-          
-            <img class="img-responsive align-bottom" src="assets/images/Drinksy-Mobile.png" alt="Drinksy" />
-          
+      <div class="project drinksy">
+        <div class="content">    
+          <div class="project-image">
+            <img src="assets/images/Drinksy-Mobile.png" alt="Drinksy" >
           </div>
+          <div class="project-info">
           
-          <div class="col-sm-7 add-padding-sm add-padding-side">
-          
-            <h1 class="medium-text">App Creation</h1>
+            <h2>App Creation</h2>
             
             <p class="lead">Take control of your alcohol consumption to start living a healthier life</p>
           
             <p>Binge drinking and alcohol consumption in London is a problem. Keeping track of alcohol is tough without a tool. I challenged myself to come up with and app and build it using the Android operating system (because I use a Nexus 5).</p>
 
-            <button class="btn-portfolio" onclick="$('.project4-extra').slideToggle();">Read More</button>
+            <button>Read More</button>
 
-            <div class="project4-extra hidden-content">
+            <div class="details">
 
               <hr/>
               
@@ -320,7 +313,7 @@
                 <button class="btn-portfolio">View Concept Wireframes</button>
               </a>
 
-              <p><br />The next stage was to build the app. I had a Nexus 5 at the time of making the app so I decided to use Android because it would be easier for me to test. While converting the wireframes into code, I got hooked into the concept of a radial progress bar. After some user testing of early prototypes, people felt that it was hard to gauge the radial bar for progress especially when it is longer than one minute long. From the feedback, I simplified the progress bar into a glass shape and lowered the prominence of the timer.
+              <p><br />The next stage was to build the app. I had a Nexus 5 at the time of making the app so I decided to use Android because it would be easier for me to test. While converting the wireframes into code, I got hooked into the concept of a radial progress bar. After some user testing of early prototypes, people felt that it was hard to gauge the radial bar for progress especially when it is longer than one minute long. From the feedback, I simplified the progress bar into a glass shape and lowered the prominence of the timer.</p>
 
               <img class="img-responsive" src="assets/images/Drinksy-Progress.png" />
 
@@ -338,26 +331,25 @@
             </div>
           
           </div>
+        </div>
       </div>
 
-      <div class="row bg-project5 add-padding-sm">
-        <div class="col-sm-3 col-sm-offset-1 scrollimation fade-up">
-          
-            <img class="img-responsive" src="assets/images/ModernGrocers.png" alt="" />
-          
+      <div class="project concept">
+        <div class="content"> 
+          <div class="project-image"> 
+            <img src="assets/images/ModernGrocers.png" alt="" >
           </div>
+          <div class="project-info">
           
-          <div class="col-sm-7 add-padding-side">
-          
-            <h1 class="medium-text">Concept Thinking</h1>
+            <h2>Concept Thinking</h2>
             
             <p class="lead">A concept to explore the possibility of making the supermarket experience better.</p>
           
             <p>I have always enjoyed learning about the thought that goes into the design of a supermarket. From the placement of products in the store layout to the prime locations ideal for eyesight, there are lot of small decisions that are made as part of the user experience. Personally I visit a supermarket 2-3 times a week to buy food. I challenged myself to come up with a digital concept that would make shopping more pleasant.</p>
 
-            <button class="btn-portfolio" onclick="$('.project5-extra').slideToggle();">Read More</button>
+            <button>Read More</button>
 
-            <div class="project5-extra hidden-content">
+            <div class="details">
 
               <hr />
               
@@ -383,68 +375,90 @@
             </div>
           
           </div>
-      </div>
-      
-      
-    
-    </section>
-    
-    <section class="bg-footer border-bottom-color2">
-     
+        </div>
+      </div>     
     </section>
 
     <!-- ==============================================
     CONTACT
     =============================================== -->
-    <section id="contact" class="add-padding">
-    
-      <div class="container text-center">
+    <section id="contact">    
+      <div class="content">  
+        <h1>Get in touch</h1>
         
-        <div class="row">
-        
-          <div class="col-sm-6 col-md-5 text-center scrollimation fade-up d1">
-          
-            <h1 class="big-text">Get in touch</h1>
-            
-            <p class="lead">Feel free to say hi or follow me online.</p>
-          
-            <ul class="social-links text-center">
-              <li><a href="mailto:le.michael@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i></a></li>
-              <li><a href="http://uk.linkedin.com/in/lifeofmle/" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a></li>
-              <li><a href="https://twitter.com/lifeofmle" target="_blank"><i class="fa fa-twitter fa-fw"></i></a></li>          
-              <li><a href="http://instagram.com/lifeofmle" target="_blank"><i class="fa fa-instagram fa-fw"></i></a></li>          
-            </ul>
-          
-          </div>
-          
-        </div>
-        
+        <p class="lead">Feel free to say hi or follow me online.</p>
+      
+        <ul class="social-links">
+          <li><a href="mailto:le.michael@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw"></i></a></li>
+          <li><a href="http://uk.linkedin.com/in/lifeofmle/" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a></li>
+          <li><a href="https://twitter.com/lifeofmle" target="_blank"><i class="fa fa-twitter fa-fw"></i></a></li>          
+          <li><a href="http://instagram.com/lifeofmle" target="_blank"><i class="fa fa-instagram fa-fw"></i></a></li>          
+        </ul>    
       </div>
-    
     </section>
     
     <!-- ==============================================
     FOOTER
-    =============================================== --> 
-    
-    <footer id="main-footer" class="add-padding bg-color2 border-top-color2">
-    
-      <div class="container">
-      
-        <div class="row">
-          
-          <div class="text-center">
-            <img src="assets/images/logo/Icon-20x20@2x.png" alt="Michael Le">            
-          </div>
-          
-        </div><!-- End row -->
-      
-      </div>
-      
+    =============================================== -->     
+    <footer>    
+      <img class="logo" src="assets/images/logo/Icon-57x57.png" alt="Michael Le">        
     </footer>
     
     <!-- ==============================================
     SCRIPTS
     =============================================== --> 
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script>
+      var investmentBtn = $('.project.investment button');
+      var bankingBtn = $('.project.banking button');
+      var pandapayBtn = $('.project.pandapay button');
+      var drinksyBtn = $('.project.drinksy button');
+      var conceptBtn = $('.project.concept button');
+      var menuBtn = $('.navbar-toggle');
+
+      investmentBtn.click(function(e){ 
+        $('.project.investment .details').slideToggle();
+      });
+      bankingBtn.click(function(e){
+        $('.project.banking .details').slideToggle();
+      });
+      pandapayBtn.click(function(e){
+        $('.project.pandapay .details').slideToggle();
+      });
+      drinksyBtn.click(function(e){
+        $('.project.drinksy .details').slideToggle();
+      });
+      conceptBtn.click(function(e){
+        $('.project.concept .details').slideToggle();
+      });
+      menuBtn.click(function(e){
+        $('.navbar-menu').slideToggle();
+      });
+
+      $(document).ready(function () {
+          $(document).on("scroll", onScroll);
+          
+          //smoothscroll
+          $('a[href^="#"]').on('click', function (e) {
+              e.preventDefault();
+              $(document).off("scroll");
+              
+              $('a').each(function () {
+                  $(this).removeClass('active');
+              })
+              $(this).addClass('active');
+            
+              var target = this.hash,
+                  menu = target;
+              $target = $(target);
+              $('html, body').stop().animate({
+                  'scrollTop': $target.offset().top-50
+              }, 500, 'swing', function () {
+                  window.location.hash = target;
+              });
+          });
+      });
+
+    </script>
   
 </html>

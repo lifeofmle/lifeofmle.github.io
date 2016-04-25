@@ -8,7 +8,8 @@ var gulp 		= require('gulp'),
 var htmlMinifyRules = {
 	removeComments: true,
 	collapseWhitespace: true,
-	conservativeCollapse: true
+	conservativeCollapse: true,
+    minifyJS: true
 }
 
 // Preprocess SCSS into CSS
@@ -52,6 +53,7 @@ gulp.task('sass-watch', ['sass'], function () {
 
     // add browserSync.reload to the tasks array to make
     // all browsers reload after tasks are complete.
+    gulp.watch("source/*.html",["minify"]).on("change", reload);
     gulp.watch("source/scss/*.scss", ['sass']).on("change", reload);
 });
 
