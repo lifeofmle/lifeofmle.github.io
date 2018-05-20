@@ -1,21 +1,22 @@
 /* Variables */
 /* Mixins */
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
 
 body {
-  font-family: Raleway, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   display: flex;
   flex-direction: column; }
 
 h1 {
-  font-family: Raleway, Arial, sans-serif;
-  font-weight: 300;
-  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   font-size: 48px;
   line-height: 50px; }
   h1.large {
@@ -23,15 +24,21 @@ h1 {
     line-height: 60px; }
 
 h2 {
-  font-family: Raleway, Arial, sans-serif;
-  font-weight: 300;
-  text-transform: uppercase;
-  font-size: 38px;
-  line-height: 40px; }
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  border-bottom: 1px solid;
+  display: table;
+  padding-bottom: 7px; }
+
+p {
+  font-size: 16px;
+  line-height: 24px; }
 
 .logo {
-  width: 40px;
-  height: 40px; }
+  width: 24px;
+  height: 24px; }
 
 nav {
   background-color: #ffffff;
@@ -52,7 +59,6 @@ nav {
       font-size: 20px;
       line-height: 30px;
       text-decoration: none;
-      text-transform: uppercase;
       display: flex;
       align-items: center;
       justify-content: center; }
@@ -67,8 +73,6 @@ nav {
     nav .navbar-menu li a {
       text-decoration: none;
       color: #6d6d6d; }
-    nav .navbar-menu li + li {
-      margin-top: 12px; }
   nav .navbar-toggle {
     cursor: pointer;
     background-color: transparent;
@@ -171,7 +175,7 @@ nav {
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 5px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
   background-color: #1f2c37; }
   .portfolio-intro .content {
     max-width: 924px;
@@ -191,6 +195,79 @@ nav {
   padding-right: 16px;
   padding-top: 10px;
   padding-bottom: 30px; }
+  .project a {
+    color: #ffffff; }
+  .project button {
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    padding: 5px 20px;
+    color: #ffffff;
+    background: transparent;
+    border: 1px solid #ffffff;
+    outline: none !important;
+    border-radius: 0;
+    transition: opacity .2s ease-out; }
+    .project button:hover {
+      color: #ffffff;
+      opacity: 0.9; }
+    .project button:focus, .project button:active {
+      color: #ffffff; }
+    .project button.dark {
+      color: #6d6d6d;
+      border-color: #6d6d6d; }
+  .project img {
+    display: block;
+    width: 100%;
+    margin: 0 auto; }
+  .project .details {
+    display: none; }
+  .project .content {
+    display: block; }
+    @media screen and (min-width: 768px) {
+      .project .content {
+        display: flex;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto; }
+        .project .content:after {
+          content: " ";
+          display: block;
+          clear: both; }
+        .project .content .project-image {
+          width: 40.67797%;
+          float: left;
+          margin-right: 1.69492%;
+          padding-top: 30px; }
+        .project .content .project-info {
+          width: 57.62712%;
+          float: left;
+          margin-right: 1.69492%; }
+        .project .content.alternate .project-image {
+          order: 2; }
+        .project .content.alternate .project-info {
+          order: 1; } }
+    @media screen and (min-width: 1024px) {
+      .project .content {
+        display: flex;
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto; }
+        .project .content:after {
+          content: " ";
+          display: block;
+          clear: both; }
+        .project .content .project-image {
+          width: 40.67797%;
+          float: left;
+          margin-right: 1.69492%;
+          margin: 0 auto; }
+        .project .content .project-info {
+          padding-left: 16px;
+          padding-right: 16px;
+          width: 57.62712%;
+          float: left;
+          margin-right: 1.69492%; } }
   .project.telegraph {
     background-color: #2299A1; }
   .project.investment {
@@ -203,71 +280,9 @@ nav {
     background-color: #EEA80D; }
   .project.concept {
     background-color: #2299A1; }
-  .project a {
-    color: #ffffff; }
-  .project button {
-    cursor: pointer;
-    font-family: Raleway, Arial, sans-serif;
-    font-size: 16px;
-    padding: 5px 20px;
-    color: #ffffff;
-    background: transparent;
-    border: 1px solid;
-    border-color: #ffffff;
-    outline: none !important;
-    border-radius: 0;
-    transition: opacity .2s ease-out; }
-    .project button:hover {
-      color: #ffffff;
-      opacity: 0.9; }
-    .project button:focus, .project button:active {
-      color: #ffffff; }
-  .project img {
-    display: block;
-    width: 100%;
-    margin: 0 auto; }
-  .project .details {
-    display: none; }
-
-@media screen and (min-width: 768px) {
-  .project .content {
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto; }
-    .project .content:after {
-      content: " ";
-      display: block;
-      clear: both; }
-    .project .content .project-image {
-      width: 32.20339%;
-      float: left;
-      margin-right: 1.69492%;
-      padding-top: 30px; }
-    .project .content .project-info {
-      width: 57.62712%;
-      float: left;
-      margin-right: 1.69492%; } }
-
-@media screen and (min-width: 1024px) {
-  .project .content {
-    max-width: 1024px;
-    margin-left: auto;
-    margin-right: auto; }
-    .project .content:after {
-      content: " ";
-      display: block;
-      clear: both; }
-    .project .content .project-image {
-      width: 23.72881%;
-      float: left;
-      margin-right: 1.69492%;
-      margin: 0 auto; }
-    .project .content .project-info {
-      padding-left: 16px;
-      padding-right: 16px;
-      width: 74.57627%;
-      float: left;
-      margin-right: 1.69492%; } }
+  .project.kounta {
+    background-color: #F2EDEB;
+    color: #6d6d6d; }
 
 /************* CONTACTS ******************/
 #contact {
@@ -316,3 +331,80 @@ footer {
     margin: 0 auto;
     margin-top: 1.6rem;
     margin-bottom: 1.6rem; }
+
+/************* CASE STUDY ******************/
+.caseStudy {
+  background: #F8F8F8;
+  color: #6d6d6d;
+  padding: 32px 0; }
+  .caseStudy h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+    line-height: 56px; }
+    @media screen and (max-width: 768px) {
+      .caseStudy h1 {
+        font-size: 32px;
+        line-height: 48px; } }
+  .caseStudy h2 {
+    margin-top: 24px;
+    margin-bottom: 24px; }
+  .caseStudy a {
+    color: #6d6d6d; }
+  .caseStudy .innerContent {
+    padding-left: 16px;
+    padding-right: 16px; }
+  .caseStudy .content {
+    max-width: 924px;
+    margin-left: auto;
+    margin-right: auto; }
+    .caseStudy .content:after {
+      content: " ";
+      display: block;
+      clear: both; }
+    .caseStudy .content.lead {
+      padding-top: 50px; }
+  .caseStudy img {
+    width: 100%; }
+  .caseStudy .sideBySide {
+    clear: both;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 16px; }
+  .caseStudy .centred {
+    text-align: center; }
+  .caseStudy .caption {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 0px;
+    margin-bottom: 16px; }
+    @media screen and (min-width: 768px) {
+      .caseStudy .caption {
+        font-size: 16px;
+        line-height: 24px; } }
+  .caseStudy .words {
+    margin-bottom: 16px; }
+    @media screen and (min-width: 768px) {
+      .caseStudy .words {
+        width: 83.05085%;
+        float: left;
+        margin-right: 1.69492%;
+        margin-left: 8.47458%; } }
+  .caseStudy.hero {
+    text-align: center;
+    padding-top: 64px; }
+    .caseStudy.hero.telegraph {
+      background-color: #2299A1; }
+      .caseStudy.hero.telegraph h1 {
+        color: white;
+        margin-bottom: 0; }
+      .caseStudy.hero.telegraph img {
+        width: 66.10169%;
+        float: left;
+        margin-right: 1.69492%;
+        margin-left: 16.94915%; }
+        @media screen and (min-width: 1440px) {
+          .caseStudy.hero.telegraph img {
+            width: 49.15254%;
+            float: left;
+            margin-right: 1.69492%;
+            margin-left: 25.42373%; } }

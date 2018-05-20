@@ -30,7 +30,7 @@ gulp.task('js', function() {
 // Minify files
 gulp.task('minify', function() {
     return gulp
-	    .src('./source/*.html')
+	    .src('./source/**/*.html')
 	    .pipe(htmlmin(htmlMinifyRules))
 	    .pipe(gulp.dest('./'));
 });
@@ -53,7 +53,7 @@ gulp.task('sass-watch', ['sass'], function () {
 
     // add browserSync.reload to the tasks array to make
     // all browsers reload after tasks are complete.
-    gulp.watch("source/*.html",["minify"]).on("change", reload);
+    gulp.watch("source/**/*.html",["minify"]).on("change", reload);
     gulp.watch("source/scss/*.scss", ['sass']).on("change", reload);
 });
 

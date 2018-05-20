@@ -3,9 +3,6 @@
   "version": "2.0.0",
   "description": "Personal portfolio website",
   "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/lifeofmle/lifeofmle.github.io.git"
@@ -26,5 +23,8 @@
     "gulp-concat": "^2.6.0",
     "gulp-htmlmin": "^1.3.0",
     "gulp-sass": "^2.2.0"
+  },
+  "scripts": {
+    "gulp": "gulp"
   }
 }

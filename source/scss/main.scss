@@ -6,7 +6,8 @@ $susy: (
 );
 
 /* Variables */
-$font-stack: Raleway, Arial, sans-serif;
+$sans: 'Open Sans', sans-serif;
+$serif: 'Playfair Display', serif;
 $base-font-size: 16px;
 
 $text-dark: #6d6d6d;
@@ -26,6 +27,7 @@ $banking-color: #2A607F;
 $pandapay-color: #DF755E;
 $drinksy-color: #EEA80D;
 $concept-color: #2299A1;
+$kounta-color: #F2EDEB;
 
 $xs-breakpoint: 320px;
 $s-breakpoint: 425px;
@@ -34,6 +36,7 @@ $l-breakpoint: 1024px;
 $xl-breakpoint: 1440px;
 
 $default-padding: 16px;
+$box-shadow: 0 2px 10px 0 rgba(0,0,0,0.20);
 
 /* Mixins */
 @mixin component-padding() {
@@ -43,6 +46,8 @@ $default-padding: 16px;
 
 html {
 	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;  
+    -moz-osx-font-smoothing: grayscale;
 }
 
 *, *:before, *:after {
@@ -50,16 +55,15 @@ html {
 }
 
 body {
-	font-family: $font-stack;
+	font-family: $sans;
 	margin: 0;
 	display: flex;
 	flex-direction: column;
 }
 
 h1 {
-	font-family: $font-stack;
-	font-weight: 300;
-	text-transform: uppercase;
+	font-family: $sans;
+	font-weight: 400;
 	font-size: 48px;
 	line-height: 50px;
 
@@ -69,16 +73,23 @@ h1 {
 	}
 }
 h2 {
-	font-family: $font-stack;
-	font-weight: 300;
-	text-transform: uppercase;
-	font-size: 38px;
-	line-height: 40px;
+	font-family: $serif;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 32px;
+	border-bottom: 1px solid;
+	display: table;
+	padding-bottom: 7px;
+}
+
+p {
+	font-size: 16px;
+	line-height: 24px;
 }
 
 .logo {
-	width: 40px;
-	height: 40px;
+	width: 24px;
+	height: 24px;
 }
 
 nav {
@@ -106,7 +117,6 @@ nav {
 			font-size: 20px;
 			line-height: 30px;
 			text-decoration: none;
-			text-transform: uppercase;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -114,7 +124,7 @@ nav {
 			img {
 				margin-right: 8px;
 			}
-		}		
+		}
 	}
 
 	.navbar-menu {
@@ -128,11 +138,6 @@ nav {
 			text-decoration: none;
 			color: $text-dark;
 		}
-
-		li+li {
-			margin-top: 12px;
-		}
-		
 	}
 
 	.navbar-toggle {
@@ -160,8 +165,7 @@ nav {
 			@include container($l-breakpoint);
 			display: flex;
 			justify-content: space-between;
-		}	
-		
+		}
 		.navbar-toggle {
 			display: none;
 		}
@@ -170,33 +174,28 @@ nav {
 			flex-direction: row;
 			order: 3;
 
-			li {
-				
-			}
-
 			li+li {
 				margin-left: 20px;
 			}
 		}
-	}	
+	}
 }
 
 /************* INTRO ******************/
 #intro {
-	background: 
+	background:
 	linear-gradient($hero-color, $hero-color),
 	url("../images/background-1.jpg");
 
-	background-size: cover;	
+	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: 0px 50px;	
+	background-position: 0px 50px;
 	padding-bottom: 30px;
 
 	.content {
 		@include component-padding();
 		padding-top: 80px;
 		color: $text-light;
-		
 
 		h1 {
 			margin-bottom: 0px;
@@ -208,7 +207,6 @@ nav {
 @media screen and (min-width: $m-breakpoint) {
 	#intro {
 		background-size: cover;
-	
 		.content {
 			@include span(isolate 6 at 7);
 
@@ -218,8 +216,8 @@ nav {
 
 @media screen and (min-width: $l-breakpoint) {
 	#intro {
-		background-position: 0px 0px;	
-		.content {			
+		background-position: 0px 0px;
+		.content {
 			@include span(isolate 5 at 6);
 		}
 	}
@@ -227,10 +225,10 @@ nav {
 
 @media screen and (min-width: $xl-breakpoint) {
 	#intro {
-		background-position: top 0px left 0px;	
+		background-position: top 0px left 0px;
 		height: 500px;
 
-		.content {			
+		.content {
 			padding-top: 150px;
 			vertical-align: center
 		}
@@ -264,7 +262,7 @@ nav {
 .portfolio-intro {
 	@include component-padding();
 	padding-top: 5px;
-	padding-bottom: 30px;
+	padding-bottom: 16px;
 	background-color: $footer-color;
 
 	.content {
@@ -278,6 +276,89 @@ nav {
 }
 
 .project {
+	color: $text-light;
+	@include component-padding();
+	padding-top: 10px;
+	padding-bottom: 30px;
+
+	a {
+		color: $text-light;
+	}
+
+	button {
+		cursor: pointer;
+		font-family: $sans;
+		font-size: $base-font-size;
+		padding: 5px 20px;
+		color: $theme-inverse;
+		background: transparent;
+		border: 1px solid $theme-inverse;
+		outline: none !important;
+		border-radius: 0;
+		transition: opacity .2s ease-out;
+
+		&:hover {
+			color: $theme-inverse;
+			opacity: 0.9;
+		}
+
+		&:focus,
+		&:active {
+			color: $theme-inverse;
+		}
+
+		&.dark {
+			color: $text-dark;
+			border-color: $text-dark;
+		}
+	}
+
+	img {
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.details {
+		display: none;
+	}
+
+	.content {
+		display: block;
+		@media screen and (min-width: $m-breakpoint) {
+			display: flex;
+			@include container(700px);
+			.project-image {
+				@include span(5);
+				padding-top: 30px;
+			}
+			.project-info{
+				@include span(7);
+			}
+			&.alternate {
+				.project-image {
+					order: 2;
+				}
+				.project-info{
+					order: 1;
+				}
+			}
+		}
+		@media screen and (min-width: $l-breakpoint) {
+			display: flex;
+			@include container($l-breakpoint);
+
+			.project-image {
+				@include span(5);
+				margin: 0 auto;
+			}
+			.project-info{
+				@include component-padding();
+				@include span(7);
+			}
+		}
+	}
+
 	&.telegraph {
 		background-color: $telegraph-color;
 	}
@@ -296,83 +377,12 @@ nav {
 	&.concept {
 		background-color: $concept-color;
 	}
-
-	color: $text-light;
-	@include component-padding();
-	padding-top: 10px;
-	padding-bottom: 30px;
-
-	a {
-		color: $text-light;
-	}
-
-	button {
-		cursor: pointer;
-		font-family: $font-stack;
-		font-size: $base-font-size;
-		padding: 5px 20px;
-		color: $theme-inverse;
-		background: transparent;
-		border: 1px solid;
-		border-color: $theme-inverse;
-		outline: none !important;
-		border-radius: 0;
-		transition: opacity .2s ease-out;
-
-		&:hover {
-			color: $theme-inverse;
-			opacity: 0.9;
-		}
-
-		&:focus,
-		&:active {
-			color: $theme-inverse;
-		}
-	}
-
-	img {
-		display: block;
-		width: 100%;
-		margin: 0 auto;
-	}
-
-	.details {
-		display: none;
+	&.kounta {
+		background-color: $kounta-color;
+		color: $text-dark;
 	}
 }
 
-@media screen and (min-width: $m-breakpoint) {
-	.project {
-		.content {	
-			@include container(700px);	
-
-			.project-image {
-				@include span(4);
-				padding-top: 30px;
-			}
-			.project-info{
-				@include span(7);
-			}
-		}
-	}
-}
-
-@media screen and (min-width: $l-breakpoint) {
-	.project {
-		.content {
-			@include container($l-breakpoint);
-
-			.project-image {
-				@include span(3);
-				margin: 0 auto;
-			}
-			.project-info{
-				@include component-padding();
-				@include span(9);
-			}
-		}
-	}
-}
 /************* CONTACTS ******************/
 #contact {
 	@include component-padding();
@@ -435,5 +445,100 @@ footer {
 		margin: 0 auto;
 		margin-top: 1.6rem;
 		margin-bottom: 1.6rem;
+	}
+}
+
+/************* CASE STUDY ******************/
+.caseStudy {
+	background: #F8F8F8;
+	color: $text-dark;
+	padding: 32px 0;
+
+	h1 {
+		font-family: $serif;
+		font-size: 48px;
+		line-height: 56px;
+
+		@media screen and (max-width: $m-breakpoint){
+			font-size: 32px;
+			line-height: 48px;
+		}
+	}
+
+	h2 {
+		margin-top: 24px;
+		margin-bottom: 24px;
+	}
+
+	a {
+		color: $text-dark;
+	}
+	.innerContent {
+		@include component-padding();
+	}
+	.content {
+		@include container($l-breakpoint - 100);
+
+		&.lead {
+			padding-top: 50px;
+		}
+	}
+
+	img {
+		width: 100%;
+	}
+
+	.sideBySide {
+		clear: both;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 16px;
+	}
+
+	.centred {
+		text-align: center;
+	}
+
+	.caption {
+		font-size: 12px;
+		line-height: 16px;
+		margin-top: 0px;
+		margin-bottom: 16px;
+
+		@media screen and (min-width: $m-breakpoint){
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+
+	.words {
+		margin-bottom: 16px;
+		@media screen and (min-width: $m-breakpoint){
+			@include span(10);
+			@include push(1);
+		}
+	}
+
+	&.hero {
+		text-align: center;
+		padding-top: 64px;
+		
+		&.telegraph {
+			h1 {
+				color: white;
+				margin-bottom: 0;
+			}
+			img {
+				@include span(8);
+				@include push(2);
+
+				@media screen and (min-width: $xl-breakpoint){
+					@include span(6);
+					@include push(3);
+				}
+			}
+			background-color: $telegraph-color;
+
+		}
 	}
 }
