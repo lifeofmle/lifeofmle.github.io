@@ -286,7 +286,8 @@ nav {
 		@include container($l-breakpoint - 100);
 
 		h1 {
-			text-align: center
+			text-align: center;
+			color: $text-dark;
 		}
 	}
 }

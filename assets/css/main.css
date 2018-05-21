@@ -194,7 +194,8 @@ nav {
       display: block;
       clear: both; }
     .portfolio-intro .content h1 {
-      text-align: center; }
+      text-align: center;
+      color: #6d6d6d; }
 
 .project {
   color: #ffffff;
