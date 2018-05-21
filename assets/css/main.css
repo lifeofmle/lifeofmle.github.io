@@ -293,6 +293,29 @@ nav {
     background-color: #F2EDEB;
     color: #6d6d6d; }
 
+#dribbble .content {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto; }
+  #dribbble .content:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+#dribbble .gallery {
+  display: grid;
+  grid-template-columns: 1fr 30% 30% 30% 1fr;
+  grid-column-gap: 16px; }
+  #dribbble .gallery img {
+    width: 100%; }
+  #dribbble .gallery .one {
+    grid-column-start: 2; }
+  #dribbble .gallery .two {
+    grid-column-start: 3;
+    padding-bottom: 24px; }
+  #dribbble .gallery .three {
+    grid-column-start: 4; }
+
 /************* CONTACTS ******************/
 #contact {
   padding-left: 16px;

@@ -402,6 +402,35 @@ nav {
 	}
 }
 
+#dribbble {
+	.content {
+		@include container($l-breakpoint);
+	}
+
+	.gallery {
+		display: grid;
+		grid-template-columns: 1fr 30% 30% 30% 1fr;
+		grid-column-gap: 16px;
+
+		img {
+			width: 100%;
+		}
+	
+		.one {
+			grid-column-start: 2;
+		}
+	
+		.two {
+			grid-column-start: 3;
+			padding-bottom: 24px;
+		}
+	
+		.three {
+			grid-column-start: 4;
+		}
+	}	
+}
+
 /************* CONTACTS ******************/
 #contact {
 	@include component-padding();
