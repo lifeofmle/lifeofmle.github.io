@@ -20,6 +20,8 @@ $nav-background: #ffffff;
 
 $hero-color: rgba(90, 169, 206, 0.7);
 $footer-color: #1f2c37;
+//$section-color: #dfdfdf;
+$section-color: #fff;
 
 $telegraph-color: #2299A1;
 $investment-color: #50C58F;
@@ -28,6 +30,7 @@ $pandapay-color: #DF755E;
 $drinksy-color: #EEA80D;
 $concept-color: #2299A1;
 $kounta-color: #F2EDEB;
+$delivering-color: #00aaa7;
 
 $xs-breakpoint: 320px;
 $s-breakpoint: 425px;
@@ -62,7 +65,7 @@ body {
 }
 
 h1 {
-	font-family: $sans;
+	font-family: $serif;
 	font-weight: 400;
 	font-size: 48px;
 	line-height: 50px;
@@ -192,14 +195,28 @@ nav {
 	background-position: 0px 50px;
 	padding-bottom: 30px;
 
+	a {
+		color: $text-light;
+	}
+
 	.content {
 		@include component-padding();
 		padding-top: 80px;
 		color: $text-light;
 
 		h1 {
+			font-family: $sans;
 			margin-bottom: 0px;
 			font-weight: 600;
+		}
+
+		p {
+			font-size: 24px;
+			line-height: 32px;
+
+			&.lead {
+				margin-top: 8px;
+			}
 		}
 	}
 }
@@ -229,7 +246,7 @@ nav {
 		height: 500px;
 
 		.content {
-			padding-top: 150px;
+			padding-top: 120px;
 			vertical-align: center
 		}
 	}
@@ -263,11 +280,10 @@ nav {
 	@include component-padding();
 	padding-top: 5px;
 	padding-bottom: 16px;
-	background-color: $footer-color;
+	background-color: $section-color;
 
 	.content {
 		@include container($l-breakpoint - 100);
-		color: $text-light;
 
 		h1 {
 			text-align: center
@@ -377,6 +393,9 @@ nav {
 	&.concept {
 		background-color: $concept-color;
 	}
+	&.delivering {
+		background-color: $delivering-color;
+	}
 	&.kounta {
 		background-color: $kounta-color;
 		color: $text-dark;
@@ -449,6 +468,15 @@ footer {
 }
 
 /************* CASE STUDY ******************/
+
+.words {
+	margin-bottom: 16px;
+	@media screen and (min-width: $m-breakpoint){
+		@include span(10);
+		@include push(1);
+	}
+}
+
 .caseStudy {
 	background: #F8F8F8;
 	color: $text-dark;
@@ -509,15 +537,7 @@ footer {
 			font-size: 16px;
 			line-height: 24px;
 		}
-	}
-
-	.words {
-		margin-bottom: 16px;
-		@media screen and (min-width: $m-breakpoint){
-			@include span(10);
-			@include push(1);
-		}
-	}
+	}	
 
 	&.hero {
 		text-align: center;
@@ -538,7 +558,18 @@ footer {
 				}
 			}
 			background-color: $telegraph-color;
+		}
 
+		&.delivering {
+			h1 {
+				color: white;
+				margin-bottom: 24px;
+			}
+			img {
+				@include span(4);
+				@include push(4);
+			}
+			background-color: $delivering-color;
 		}
 	}
 }

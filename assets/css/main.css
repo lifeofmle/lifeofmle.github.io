@@ -15,7 +15,7 @@ body {
   flex-direction: column; }
 
 h1 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: 48px;
   line-height: 50px; }
@@ -114,14 +114,22 @@ nav {
   background-repeat: no-repeat;
   background-position: 0px 50px;
   padding-bottom: 30px; }
+  #intro a {
+    color: #ffffff; }
   #intro .content {
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 80px;
     color: #ffffff; }
     #intro .content h1 {
+      font-family: "Open Sans", sans-serif;
       margin-bottom: 0px;
       font-weight: 600; }
+    #intro .content p {
+      font-size: 24px;
+      line-height: 32px; }
+      #intro .content p.lead {
+        margin-top: 8px; }
 
 @media screen and (min-width: 768px) {
   #intro {
@@ -146,7 +154,7 @@ nav {
     background-position: top 0px left 0px;
     height: 500px; }
     #intro .content {
-      padding-top: 150px;
+      padding-top: 120px;
       vertical-align: center; } }
 
 /************* BACKGROUND ******************/
@@ -176,12 +184,11 @@ nav {
   padding-right: 16px;
   padding-top: 5px;
   padding-bottom: 16px;
-  background-color: #1f2c37; }
+  background-color: #fff; }
   .portfolio-intro .content {
     max-width: 924px;
     margin-left: auto;
-    margin-right: auto;
-    color: #ffffff; }
+    margin-right: auto; }
     .portfolio-intro .content:after {
       content: " ";
       display: block;
@@ -280,6 +287,8 @@ nav {
     background-color: #EEA80D; }
   .project.concept {
     background-color: #2299A1; }
+  .project.delivering {
+    background-color: #00aaa7; }
   .project.kounta {
     background-color: #F2EDEB;
     color: #6d6d6d; }
@@ -333,6 +342,15 @@ footer {
     margin-bottom: 1.6rem; }
 
 /************* CASE STUDY ******************/
+.words {
+  margin-bottom: 16px; }
+  @media screen and (min-width: 768px) {
+    .words {
+      width: 83.05085%;
+      float: left;
+      margin-right: 1.69492%;
+      margin-left: 8.47458%; } }
+
 .caseStudy {
   background: #F8F8F8;
   color: #6d6d6d;
@@ -381,14 +399,6 @@ footer {
       .caseStudy .caption {
         font-size: 16px;
         line-height: 24px; } }
-  .caseStudy .words {
-    margin-bottom: 16px; }
-    @media screen and (min-width: 768px) {
-      .caseStudy .words {
-        width: 83.05085%;
-        float: left;
-        margin-right: 1.69492%;
-        margin-left: 8.47458%; } }
   .caseStudy.hero {
     text-align: center;
     padding-top: 64px; }
@@ -408,3 +418,13 @@ footer {
             float: left;
             margin-right: 1.69492%;
             margin-left: 25.42373%; } }
+    .caseStudy.hero.delivering {
+      background-color: #00aaa7; }
+      .caseStudy.hero.delivering h1 {
+        color: white;
+        margin-bottom: 24px; }
+      .caseStudy.hero.delivering img {
+        width: 32.20339%;
+        float: left;
+        margin-right: 1.69492%;
+        margin-left: 33.89831%; }
