@@ -35,13 +35,6 @@ gulp.task('minify', function() {
 	    .pipe(gulp.dest('./'));
 });
 
-// Move images
-gulp.task('move', function() {
-    return gulp
-	    .src('./source/images/**/*')
-	    .pipe(gulp.dest('./assets/images'));
-});
-
 gulp.task('sass-watch', ['sass'], function () {
 
     // Serve files from the root of this project
