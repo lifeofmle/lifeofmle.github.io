@@ -36,9 +36,12 @@ p {
   font-size: 18px;
   line-height: 28px; }
 
-ul li a {
+a {
   font-size: 18px;
-  line-height: 28px; }
+  line-height: 28px;
+  color: #ffffff; }
+  a.dark {
+    color: #6d6d6d; }
 
 .logo {
   width: 24px;
@@ -119,21 +122,23 @@ nav {
   background-position: 0px 50px;
   padding-bottom: 30px; }
   #intro a {
-    color: #ffffff; }
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 32px; }
   #intro .content {
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 80px;
     color: #ffffff; }
     #intro .content h1 {
-      font-family: "Open Sans", sans-serif;
-      margin-bottom: 0px;
-      font-weight: 600; }
+      margin-bottom: 0px; }
     #intro .content p {
       font-size: 24px;
       line-height: 32px; }
       #intro .content p.lead {
-        margin-top: 8px; }
+        margin-top: 8px;
+        font-size: 24px;
+        line-height: 32px; }
 
 @media screen and (min-width: 768px) {
   #intro {
@@ -182,6 +187,26 @@ nav {
   #background h1 {
     text-align: center; }
 
+.articles {
+  clear: both;
+  display: grid;
+  grid-template-rows: auto;
+  grid-row-gap: 16px; }
+  .articles a {
+    text-decoration: none; }
+  .articles h2 {
+    font-size: 18px;
+    line-height: 24px; }
+  .articles p {
+    font-size: 16px;
+    line-height: 24px; }
+  .articles .card {
+    padding: 16px; }
+  @media screen and (min-width: 768px) {
+    .articles {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 24px; } }
+
 /************* PROJECTS ******************/
 .portfolio-intro {
   padding-left: 16px;
@@ -201,33 +226,37 @@ nav {
       text-align: center;
       color: #6d6d6d; }
 
+button {
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  padding: 5px 20px;
+  color: #6d6d6d;
+  background: transparent;
+  border: 1px solid #6d6d6d;
+  outline: none !important;
+  border-radius: 0;
+  transition: opacity .2s ease-out; }
+  button:hover {
+    opacity: 0.8; }
+
+.card {
+  background-color: #ffffff;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1); }
+  .card img {
+    width: 100%; }
+  .card.small {
+    width: 50%;
+    margin: auto; }
+
 .project {
-  color: #ffffff;
+  color: #6d6d6d;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 10px;
   padding-bottom: 30px; }
   .project a {
-    color: #ffffff; }
-  .project button {
-    cursor: pointer;
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    padding: 5px 20px;
-    color: #ffffff;
-    background: transparent;
-    border: 1px solid #ffffff;
-    outline: none !important;
-    border-radius: 0;
-    transition: opacity .2s ease-out; }
-    .project button:hover {
-      color: #ffffff;
-      opacity: 0.9; }
-    .project button:focus, .project button:active {
-      color: #ffffff; }
-    .project button.dark {
-      color: #6d6d6d;
-      border-color: #6d6d6d; }
+    color: #6d6d6d; }
   .project img {
     display: block;
     width: 100%;
@@ -250,15 +279,11 @@ nav {
           width: 40.67797%;
           float: left;
           margin-right: 1.69492%;
-          padding-top: 30px; }
+          padding-top: 32px; }
         .project .content .project-info {
           width: 57.62712%;
           float: left;
-          margin-right: 1.69492%; }
-        .project .content.alternate .project-image {
-          order: 2; }
-        .project .content.alternate .project-info {
-          order: 1; } }
+          margin-right: 1.69492%; } }
     @media screen and (min-width: 1024px) {
       .project .content {
         display: flex;
@@ -280,23 +305,13 @@ nav {
           width: 57.62712%;
           float: left;
           margin-right: 1.69492%; } }
-  .project.telegraph {
-    background-color: #2299A1; }
-  .project.investment {
-    background-color: #50C58F; }
-  .project.banking {
-    background-color: #2A607F; }
-  .project.pandapay {
-    background-color: #DF755E; }
-  .project.drinksy {
-    background-color: #EEA80D; }
-  .project.concept {
-    background-color: #2299A1; }
-  .project.delivering {
-    background-color: #00aaa7; }
-  .project.kounta {
-    background-color: #F2EDEB;
-    color: #6d6d6d; }
+  .project:nth-child(even) {
+    background-color: #f0f0f0; }
+    @media screen and (min-width: 768px) {
+      .project:nth-child(even) .project-image {
+        order: 2; }
+      .project:nth-child(even) .project-info {
+        order: 1; } }
 
 #dribbble .content {
   max-width: 1024px;
@@ -312,22 +327,24 @@ nav {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
-  grid-row-gap: 16px; }
+  grid-row-gap: 24px; }
   #dribbble .gallery img {
     width: 100%; }
   @media screen and (min-width: 768px) {
     #dribbble .gallery {
-      grid-template-columns: 0.25fr 1fr 1fr 1fr 0.25fr;
-      grid-template-rows: auto;
-      grid-column-gap: 16px;
-      grid-template-areas: ". one two three ."; }
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(12, auto);
+      grid-column-gap: 32px;
+      grid-row-gap: 32px; }
       #dribbble .gallery .one {
-        grid-area: one; }
+        grid-column: 1 / 7;
+        grid-row: 1 / 7; }
       #dribbble .gallery .two {
-        grid-area: two;
-        padding-bottom: 24px; }
+        grid-column: 8 / 12;
+        grid-row: 2 / 5; }
       #dribbble .gallery .three {
-        grid-area: three; } }
+        grid-column: 7 / 11;
+        grid-row: 5 / 12; } }
 
 /************* CONTACTS ******************/
 #contact {
@@ -464,3 +481,18 @@ footer {
         float: left;
         margin-right: 1.69492%;
         margin-left: 33.89831%; }
+    .caseStudy.hero.kounta {
+      background-color: #F2EDEB; }
+      .caseStudy.hero.kounta h1 {
+        margin-bottom: 24px; }
+      .caseStudy.hero.kounta img {
+        width: 66.10169%;
+        float: left;
+        margin-right: 1.69492%;
+        margin-left: 16.94915%; }
+        @media screen and (min-width: 1440px) {
+          .caseStudy.hero.kounta img {
+            width: 49.15254%;
+            float: left;
+            margin-right: 1.69492%;
+            margin-left: 25.42373%; } }

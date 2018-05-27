@@ -9,6 +9,7 @@
     <title>Michael Le - Telegraph</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex">
 
     <!-- ==============================================
     Favicons
@@ -22,6 +23,7 @@
     CSS
     =============================================== -->
     <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
     <!-- ==============================================
     Fonts
@@ -189,7 +191,53 @@
 
                     <img src="assets/images/telegraph/progression.png" alt="Progression" />
                     <p class="centred caption">Evolving design</p>
+
+                    <div class="words">
+                            <h2>Discover more</h2>
+                    </div>
+                    <div class="articles">
+                            <div
+                              class="card"
+                              data-aos="fade-up"
+                              data-aos-duration="1000"
+                              data-aos-easing="ease-out-quad">
+                              <a class="dark" href="https://medium.com/@Lifeofmle/why-i-became-a-ux-designer-f5581fe3e0d" target="_blank">
+                                <div>
+                                    <h2>Why I am UX designer</h2>
+                                    <p class="caption">The part of the job that I enjoyed the most is gathering information on problem and discovering what the solution should be.</p>
+                                </div>
+                              </a>
+                            </div>
+                            <div
+                              class="card"
+                              data-aos="fade-up"
+                              data-aos-duration="1000"
+                              data-aos-easing="ease-out-quad">
+                              <a class="dark" href="https://medium.com/@Lifeofmle/framing-design-problems-with-3-questions-9c01459e386c" target="_blank">
+                                <div>
+                                    <h2>Framing design problems</h2>
+                                    <p class="caption">You can’t apply one process to different kinds of problems. This is my way of choosing between different methodologies out there</p>
+                                </div>
+                              </a>
+                            </div>
+                            <div
+                              class="card"
+                              data-aos="fade-up"
+                              data-aos-duration="1000"
+                              data-aos-easing="ease-out-quad">
+                              <a class="dark" href="https://medium.com/@Lifeofmle/its-okay-to-use-both-personas-and-jtbd-75880d4a2949" target="_blank">
+                                <div>
+                                    <h2>Personas and Jobs to be done</h2>
+                                    <p class="caption">Many JTBD practitioners say that you don’t need personas anymore. In my personal experience I would say that both work well together.</p>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+
+
                 </div>
+
+                
         </div>
     </section>
 
@@ -205,12 +253,16 @@
     SCRIPTS
     =============================================== -->
     <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script>
       var menuBtn = $('.navbar-toggle');
       menuBtn.click(function(e){
         $('.navbar-menu').slideToggle();
       });
 
+      AOS.init({
+        easing: 'ease-out-quad'
+      });
     </script>
 
   </body>

@@ -52,4 +52,4 @@ gulp.task('sass-watch', ['sass'], function () {
 
 
 // Entry point to start Gulp
-gulp.task('default', ['js','minify','move','sass-watch']);
+gulp.task('default', ['js','minify','sass-watch']);
