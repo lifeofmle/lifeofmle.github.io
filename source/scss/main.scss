@@ -364,6 +364,17 @@ button {
 		margin: auto;
 	}
 
+	&.next {
+		background-color: $stripe-color;
+		border: 8px solid #ffffff;
+	}
+
+	.titleArea {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
 }
 
 .project {

@@ -248,6 +248,13 @@ button {
   .card.small {
     width: 50%;
     margin: auto; }
+  .card.next {
+    background-color: #f0f0f0;
+    border: 8px solid #ffffff; }
+  .card .titleArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
 
 .project {
   color: #6d6d6d;
