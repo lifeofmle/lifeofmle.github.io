@@ -436,6 +436,11 @@ footer {
       padding-top: 50px; }
   .caseStudy img {
     width: 100%; }
+    .caseStudy img.small {
+      width: auto; }
+    .caseStudy img.centred {
+      display: block;
+      margin: 0 auto; }
   .caseStudy .sideBySide {
     clear: both;
     display: grid;

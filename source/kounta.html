@@ -83,75 +83,110 @@
                 <div class="content">
 
                     <div class="words">
-                        <p>This case study was chosen of a large project handled in a short time.</p>
+                        <p>This case study was chosen because I lead the design and front end coding.</p>
 
                         <h2>The Brief</h2>
                 
-                        <p>While working for Pivotal Labs, I had the opportunity to work with an online food delivery company.</p>
+                        <p>Kounta at the time was a 5 year old company that had found product market fit of providing
+                           a cloud based point of sale solution to restaurants and cafes around the world. To help shape
+                            the vision of the next step of the journey, the company went through a branding exercise to
+                             understand who they are and who their customer is  - this meant a rebrand.</p>
                         
-                        <p>The product team that I worked with was trying to solve the issue of "Where is my order?" because it was the cause of a large volume of support calls and the business felt there were some opportunities to fix it.</p>
-
-                        <a href="https://brand.kounta.com/" target="_blank"><button class="dark">Learn about brand update</button></a>
-                    </div>
-
-                    <div class="words">
-                        <h2>The Process</h2>
-
-                        <p>I helped lead an initial workshop which included senior stakeholders, customer service manager, UX reesearch, engineers, and product managers.</p>
-
-                        <p>Our approach was to understand the problem to have everyone tell their side of the problem so that we could get the full perspective.</p>
-                    </div>
-
-                    <img src="assets/images/delivering/postorder.png" alt="Post its" />
-                    <p class="centred caption">Putting down opportunities</p>
-
-                    <img src="assets/images/delivering/areasofinterest.png" alt="Mapping it out" />
-                    <p class="centred caption">Mapping the order journey</p>
-
-                    <img src="assets/images/delivering/storymapping.png" alt="Story mapping" />
-                    <p class="centred caption">Story mapping</p>
-
-                    <div class="words">
-                        <h2>Opportunities</h2>
-
-                        <p>As a team we indentified the following areas where we could focus on:</p>
-
-                        <ul>
-                            <li>Initial: Ensure that the customer is ordering to the correct address initially</li>
-                            <li>During: Show notifications if there are issues during delivery</li>
-                            <li>Post order: How might we improve customer service representatives assist when tech fails</li>
-                        </ul>
-
-                        <p>For the purpose of this case study (and reasons of non-disclosure), we will focus on the customer service experience.</p>
-
-                        <p>Customer service representatives (CS reps) had to update the address of the user if the initial address was not correct. We thought the best way to do this was to just show the initial address along with the new address entry so that CS reps could check the differences</p>
-                    </div>
-
-                    <img src="assets/images/delivering/initialmap.png" alt="Initial design" />
-                    <p class="centred caption">Initial change address design</p>
-
-                    <div class="words">
-                        <p>We went out to the customer service centre after designing a this design and to get more insights on how they handled service calls.
+                        <p>
+                            A big part of realising this vision would be through the product execution as is what
+                            customers will see in the end. This work would be the foundation for new experiences on Kounta.
                         </p>
-                        <p>When we observed the CS reps, we noticed that when fielding calls about address change, they had Google maps opened in addition to the admin interface. What we learnt from this experience were the following things: </p>
-                        <ul>
-                            <li>CS reps didn't live in the cities of the customer so they had little context of the location</li>
-                            <li>Google maps helped them orient the CS reps while the customer stated the new address</li>
-                            <li>CS reps had to copy the address back into the admin tool</li>
-                        </ul>
-                        <p>We applied these new lessons into an updated design which integrated an interactive Google maps and Google address lookup to remove the need to have an extra maps tab open.</p>
                     </div>
 
-                    <img src="assets/images/delivering/improvedmap.png" alt="Updated design of address change" />
-                    <p class="centred caption">Updated change address design</p>
+                    <div class="words">
+                      <h2>The Process</h2>
+
+                      <p>When the product owner and I joined the project of 3 engineers, there were some initial directions on the design but final designs decisions were needed. The deadline to release the updated product was also in 2 months time.</p>
+
+                      <p>We quickly did an audit of the work to be done. We did this by going through the flows of the application and took screenshots along the way.</p>
+
+                      <p>Then we assessed the current plans which included a rewrite of the application and navigation changes. Based on engineering feedback and the scope of work we had to scope out our team felt like this was not enough time to get the new navigation user validated, code changed, and everything regression tested in time.</p>
+                  
+                      <h3>Reducing the scope of change</h3>
+
+                      <p>We knew we wouldn't get this done in time and inform users responsibly. There was a big risk in the designs that they haven't been validated with users and the turnaround time to do usability tests as well as design the components necessary to test would push us away.</p>
+                  
+                      <p>We had a discussion with senior management and we were able to get an extra month but more importantly we were able to cut some of the scope back for the initial release. We focused only on implementing the part of the navigation change and styling changes for the rebrand. This meant that we made could get things tested properly.</p>
+                  
+                      <h3>Visual foundation</h3>
+
+                      <p>For the foundation of the redesign I focused on the following: typographic scale, spacing, and colour. The rebranding included change in fonts and that meant working out the typographic scale for the application. </p>
+                    </div>
+
+                    <img src="assets/images/kounta/typography.png" alt="Typography" />
+                    <p class="centred caption">Typography</p>
+
+                    <div class="words">
+                      <p>For spacing, I decided to go with a 8px grid so that our design would scale well across the different devices that we support and the spacing calculation is easy to calculate. </p>
+
+                      <p>The colour for the application were updated as part of the rebrand but I needed to find out combinations that worked visually for accessibility and as well as from a brand standpoint.</p>
+                    </div>
+
+                    <img src="assets/images/kounta/colours.png" alt="Colours" />
+                    <p class="centred caption">Rules and the search for tertiary app colours</p>
+
+                    <div class="words">
+                      <p>Once the foundations were in place, the next step was to test them in action by applying them to a few sample pages to see if the concepts hold up with real data.</p>
+
+                      <p>With a few tweaks, we had a foundation to start applying the changes across the product.</p>
+                    </div>
+
+                    <img src="assets/images/kounta/daylight.jpg" alt="Outdoors" />
+                    <p class="centred caption">Checking for constrast in daylight</p>
+
+                    <div class="words">
+                      <h2>Key changes</h2>
+
+                      <p>One of the actions that confused most internal employees first time using the product was what this icon ✋ meant</p>
+
+                      <img class="small centred" src="assets/images/kounta/old-pos-hand.png" alt="Hand" />
+                      <p class="centred caption">What does the hand mean?</p>
+
+                      <p>This action of the hand was to put the order on hold and send the order to the kitchen. This is useful for table
+                          service restaurants when they want to send the order to be made prior to having the customer pay for the meal.
+                           In explaining this functionality to each other a few times, we said why don't we just change it to "Send". 
+                           We went out to some of our nearby customers as a form of guerilla testing and got positive reactions to the change.
+                            This signal along with upcoming communications about the change we were confident to go ahead with the change.
+                      </p>
+
+                      <img class="small centred" src="assets/images/kounta/Send.png" alt="Send" />
+                      <p class="centred caption">From 🤚 to "Send"</p>
+
+                      <p>When we did site visits and usage analysis, we released that people didn't put up a lot of product images in the point
+                          of sale. When asked, many customers did not have the time to take and upload photos. We decided to make it a better
+                           experience to improve this state by using product initials instead of a default image. In doing so, we hoped for customers
+                            to have a better experience while scanning for information.</p>
+
+                      <img class="small centred" src="assets/images/kounta/tiles.png" alt="Initial tiles" />
+                      <p class="centred caption">Product tiles</p>
+
+                      <h3>Should designers code?</h3>
+                      <p>We got our one month extension but the extension came at the time of Christmas and many people were on holiday. This meant
+                         that after the holidays, there would be a mountain of work for the team to tackle in a rush to get it ready for testing prior
+                          to launch. I mediated the situation because I had some experience in doing HTML/CSS and asked the CTO and engineers if I could
+                           help contribute to the front end changes. They gave me access to commit to the code base and good to see that I didn't break everything.
+                      </p>
+                    </div>
+
+                    <img src="assets/images/kounta/github.png" alt="Github" />
+                    <p class="centred caption">Contribution to the codebase</p>
 
                     <div class="words">
                         <h2>The Outcome</h2>
+                        <p>We were able to finish the work and release it to our customers only 2 weeks later than we initially targeted.</p>
                         <p>
-                            The change in design reflected actual user experiences and when updated designs were tested with the CS reps, it was well received as a potential process improvement due to the elimination of context switching while on call with customers.
+                            For our key changes, we had more people using the feature of "Send" because they understand what it is and for those who didn't use it we have had request to remove it. This is good info for us because our team had a hypothesis that not everyone uses the "Send" features and therefore we could simplify the UI to have a basic mode. The product tiles were of a mix success, some customers loved it and other loathed it because they had long product names which were now truncated. To fix the situation, for existing customers we had this feature turned off by default and for new customers this feature is turned on. The rationale here was that we wanted to change customers behaviour of simplifying product display on the point of sale based on similar contexts of other successful customers using our product.
                         </p>
                         <p>
-                            The moral of the story is that you should always try to test your prototypes in the context of the users.
+                            We laid the foundation so now we are able to tackle the things we could not get to do earlier. Some elements of the navigation are being implemented in other areas of the product to get real life feedback on a small scale before rolling it out to the core experience. We are improving our product metrics and have adopted Google's HEART framework to measure success of new features that we roll out. I started leading and coding our components into a design system that is written in React.
+                        </p>
+                        <p>
+                            All of this work could not have been done without the help of our engineers, support staff testing and documenting the changes, QA engineers ensuring we maintained quality, product owners who know the product inside and out, and senior management for their support and understanding.
                         </p>
                     </div>
                 </div>
