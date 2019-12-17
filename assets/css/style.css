@@ -100,8 +100,8 @@ h1, h2, h3, p {
 }
 
 h1 {
-  font-size: 56px;
-  line-height: 72px;
+  font-size: 13vmin;
+  line-height: 1.2;
   color: var(--mle-heading-color);
   font-weight: var(--mle-font-weight-bold);
 }
