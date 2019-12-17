@@ -34,6 +34,7 @@ html {
   font-family: var(--mle-font-family);
   font-size: 20px;
   line-height: 36px;
+  overflow-x: hidden;
 }
 
 *, *:before, *:after {
@@ -500,9 +501,8 @@ footer p + p {
   position: absolute;
   height: 26px;
   width: 26px;
-  left: 4px;
   bottom: 4px;
-  font-size: 24px;
+  font-size: 21px;
   line-height: 28px;
   padding-left: 1px;
   transition: .4s;
@@ -518,12 +518,14 @@ input:checked + .slider {
 
 input + .slider:before {
   content: "☀️";
-  background-color: white;
+  background-color:transparent;
+  left: 4px;
 }
 
 input:checked + .slider:before {
   content: "🌙";
-  background-color: var(--mle-blue100);
+  background-color:transparent;
+  right: 2px;
 }
 
 input:focus + .slider {
