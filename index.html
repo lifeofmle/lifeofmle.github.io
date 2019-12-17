@@ -1,7 +1,21 @@
 <!DOCTYPE html>
-<html lang="en-AU">
+<html lang="en-AU" class="no-js">
+<!--
+You viewed source, it was super effective, here is a Pikachu
+⣿⣿⣿⣿⣿⡏⠉⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿
+⣿⣿⣿⣿⣿⣿⠀⠀⠀⠈⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⠉⠁⠀⣿
+⣿⣿⣿⣿⣿⣿⣧⡀⠀⠀⠀⠀⠙⠿⠿⠿⠻⠿⠿⠟⠿⠛⠉⠀⠀⠀⠀⠀⣸⣿
+⣿⣿⣿⣿⣿⣿⣿⣷⣄⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⣴⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⡟⠀⠀⢰⣹⡆⠀⠀⠀⠀⠀⠀⣭⣷⠀⠀⠀⠸⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠈⠉⠀⠀⠤⠄⠀⠀⠀⠉⠁⠀⠀⠀⠀⢿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⢾⣿⣷⠀⠀⠀⠀⡠⠤⢄⠀⠀⠀⠠⣿⣿⣷⠀⢸⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⡀⠉⠀⠀⠀⠀⠀⢄⠀⢀⠀⠀⠀⠀⠉⠉⠁⠀⠀⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿
+Feel free to say hi on Twitter @lifeofmle
+-->
   <head>
-
     <!-- ==============================================
     Title and Meta Tags
     =============================================== -->
@@ -35,35 +49,38 @@
     </script>
   </head>
 
-  <body>
-    <label class="switch">
-      <input class="darkmode-toggle" type="checkbox">
-      <span class="slider round"></span>
-    </label>
-    <nav class="mle-theme">
+  <body class="theme">
+    <nav>
       <div class="navbar-header">
         <a class="navbar-brand" href="http://lifeofmle.com">Michael Le</a>
       </div>
+      <label class="switch">
+        <input name="darkToggle" class="darkmode-toggle" type="checkbox">
+        <span class="slider round"></span>
+      </label>
     </nav>
 
     <!-- HERO -->
-    <main>
-      <section id="hero" data-aos="hero-fade" data-aos-anchor-placement="bottom-bottom">
-        <div class="blob1">
-          <img src="assets/images/blob1.svg">
-        </div>
-        <div class="blob2">
-          <img src="assets/images/blob2.svg">
-        </div>
-        <div class="blob3">
-          <img src="assets/images/blob3.svg">
-        </div>
-        <div class="hero--content">
-          <h1>Helping teams ship better designs</h1>
-          <p>From discovery to the alignment of pixels & code.</p>
-        </div>
-      </section>
+    <div id="hero" data-aos="hero-fade" data-aos-anchor="#main">
+      <div class="blob blob1">
+        <div class="blobLabel">Code</div>
+        <img src="assets/images/blob1.svg">
+      </div>
+      <div class="blob blob2">
+        <div class="blobLabel">Design</div>
+        <img src="assets/images/blob2.svg">
+      </div>
+      <div class="blob blob3">
+        <div class="blobLabel">Leadership</div>
+        <img src="assets/images/blob3.svg">
+      </div>
+      <div class="hero--content">
+        <h1>👋 Hi, I help teams <br />ship better outcomes</h1>
+        <p>From product discovery to the alignment of pixels & code.</p>
+      </div>
+    </div>
 
+    <main id="main">
       <section class="intro">
         <div class="profile large">
           <div class="profile--blob3">
@@ -89,7 +106,7 @@
       </section>
 
       <!-- PORTFOLIO -->
-      <section id="portfolio">
+      <section id="kounta">
         <div class="project kounta">
           <div class="content">
             <div class="project-info">
@@ -99,36 +116,40 @@
 
               <p>Helping the product team connect with restaurant & hospitality customers and learn how they use our product. 
                 Leading the design system efforts along with the engineering team using React for delivering a consistent experience for our customers.</p>  
-
-                <a href="./kounta.html"><button>View case study</button></a>
-            </div>
-            <div class="project-image">
-              <img src="assets/images/kounta/pos-dark.png" alt="Kounta" >
             </div>
           </div>
         </div>
+      </section>
 
+      <div class="kounta project-image right">
+        <img src="assets/images/kounta/pos-dark.png" alt="Kounta" >
+        <a class="showcase-link left bottom" href="./kounta.html">View case study</a>
+      </div>
+
+      <section id="delivering">
         <div class="project delivering">
-            <div class="content">
-              <div class="project-info">
-                <h2>Adapting when the design was wrong</h2>
+          <div class="content">
+            <div class="project-info">
+              <h2>Continuous discovery for refining problems</h2>
 
-                <p class="lead">One of the most common queries for online delivery is "Where is my order?"</p>
+              <p class="lead">One of the most common queries for online delivery is "Where is my order?"</p>
 
-                <p>Ran workshops and discovery research to identify opportunities for the product team to focus on. The moral of this story is to get in front of your customers so you can get better context.</p>
-
-                <a href="./delivering.html"><button>View case study</button></a>
-              </div>
-              <div class="project-image">
-                <img src="assets/images/delivering/improvedmap.png" alt="map" width="80%">
-              </div>
+              <p>Ran workshops and discovery research to identify opportunities for the product team to focus on. The moral of this story is to get in front of your customers so you can get better context.</p>
             </div>
           </div>
+        </div>
+      </section>
 
+      <div class="delivering project-image left">
+        <img src="assets/images/delivering/improvedmap.png" alt="map" width="80%">
+        <a class="showcase-link right bottom" href="./delivering.html">View case study</a>
+      </div>
+
+      <section id="telegraph">
         <div class="project telegraph">
           <div class="content">
             <div class="project-info">
-              <h2>Design for the masses</h2>
+              <h2>Designing for the masses</h2>
 
               <p class="lead">Redesigning the Telegraph website</p>
 
@@ -136,87 +157,86 @@
                 The new responsive web site responsible for delivering content to millions of visitors every day.</p>
 
               <p>I always wanted to work on products that had a positive impact on many people. I am fortunate to be working with a great team and I am extremely proud of the work that we did.</p>
-
-              <a href="./telegraph.html"><button>View case study</button></a>
-            </div>
-            <div class="project-image">
-              <img src="assets/images/telegraph/fashionscreens.png" alt="Telegraph Fashion" >
             </div>
           </div>
         </div>
       </section>
+
+      <div class="telegraph project-image right">
+        <img src="assets/images/telegraph/fashionscreens.png" alt="Telegraph Fashion" >
+        <a class="showcase-link left top" href="./telegraph.html">View case study</a>
+      </div>
 
       <section id="givingback">
         <h2>Giving back to the community</h2>
         <p>For the year I created a  plugins for Sketch and Figma to make myself and my team efficient in their daily tasks.</p>
         <div class="plugins">
           <div class="plugin">
-            <img src="assets/images/plugin-symbolinsert.png" alt="Symbol Insert icon" />
+            <img src="assets/images/plugin-symbolinsert.png" alt="Symbol Insert icon"  data-aos="fade-up" data-aos-anchor="#telegraph" data-aos-anchor-placement="bottom-bottom"/>
             <a href="https://github.com/lifeofmle/symbol-insert" target="_blank">Symbol Insert</a>
-            <p class="caption">Add symbols via lookup Sketch</p>
+            <p class="caption">Lookup Sketch symbols</p>
           </div>
           <div class="plugin">
-            <img src="assets/images/plugin-hemingway.png" alt="Hemingway icon" />
+            <img src="assets/images/plugin-hemingway.png" alt="Hemingway icon" data-aos="fade-up" data-aos-anchor="#telegraph" data-aos-anchor-placement="bottom-bottom"/>
             <a href="https://www.figma.com/c/plugin/760035865558407437/Hemingway" target="_blank">Hemingway</a>
-            <p class="caption">Checks writing style in Figma</p>
+            <p class="caption">Check writing style in Figma</p>
           </div>
           <div class="plugin">
-            <img src="assets/images/plugin-stickynotes.png" alt="Sticky Notes icon" />
+            <img src="assets/images/plugin-stickynotes.png" alt="Sticky Notes icon"  data-aos="fade-up" data-aos-anchor="#telegraph" data-aos-anchor-placement="bottom-bottom">
             <a href="https://www.figma.com/c/plugin/776702826923617343/Sticky-Notes" target="_blank">Sticky Notes</a>
-            <p class="caption">Add/paste notes in Figma</p>
+            <p class="caption">Add notes in Figma</p>
           </div>
         </div>
-        <div class="content">
-          <p>I write so that I can articulate my thoughts and experiences. Writing online makes that knowledge easy to share with others.</p>
-          <p>Public speaking has not always been easy for me because I was shy and English was my second language. Through my career as a consultant, I did presentations to senior stakeholders and clients. However, I didn't enjoy public speaking until my manager Jane Austin encourage me to talk about design for the first time.</p>
-        </div>
-        <div class="writing">
-          <h3>Writing</h3>
-          <div class="articles">
-            <div class="post">
-              <a href="https://medium.com/@Lifeofmle/why-i-became-a-ux-designer-f5581fe3e0d" target="_blank">
-                Why I became a UX designer
-              </a>
-              <p class="caption">My origin story.</p>
-            </div>
-            <div class="post">
-              <a href="https://medium.com/@Lifeofmle/framing-design-problems-with-3-questions-9c01459e386c" target="_blank">
-                Framing design problems
-              </a>
-              <p class="caption">My design process</p>
-            </div>
-            <div class="post">
-              <a href="https://medium.com/@Lifeofmle/why-i-became-a-ux-designer-f5581fe3e0d" target="_blank">
-                Why I became a UX designer
-              </a>
-              <p class="caption">My origin story</p>
-            </div>
-          </div>
-        </div>
-        <div class="speaking">
-          <h3>Speaking</h3>
-          <div class="talks">
-            <div class="talk">
-              <a href="https://medium.com/@Lifeofmle/aligning-impact-from-boardrooms-to-pixels-3b50490a3c3c" target="_blank">
-                Using OKRs to aligning impact
-              </a>
-              <p class="caption">Agile Australia, 2017</p>
-            </div>
-            <div class="talk">
-              <a href="https://medium.com/@Lifeofmle/notes-from-prototyping-with-framer-b07813dc945d" target="_blank">
-                Prototyping with Framer
-              </a>
-              <p class="caption">Tech Talks Sydney, 2017</p>
-            </div>
-            <div class="talk">
-              <a href="http://www.slideshare.net/lifeofmle/exploring-design-with-agile" target="_blank">
-                Exploring design with Agile
-              </a>
-              <p class="caption">Upfront Conf Mini, 2015</p>
-            </div>
-          </div>
-        </div>
+        <p>I write so that I can articulate my thoughts and experiences. Writing online makes that knowledge easy to share with others.</p>
+        <p>Public speaking has not always been easy for me because I was shy and English was my second language. Through my career as a consultant, I did presentations to senior stakeholders and clients. However, I didn't enjoy public speaking until my manager Jane Austin encourage me to talk about design for the first time.</p>
       </section>
+
+      <div class="writing">
+        <h3>Writing</h3>
+        <div class="articles">
+          <div class="post">
+            <a href="https://medium.com/@Lifeofmle/framing-design-problems-with-3-questions-9c01459e386c" target="_blank">
+              Framing design problems
+            </a>
+            <p class="caption">My design process</p>
+          </div>
+          <div class="post">
+            <a href="https://medium.com/@Lifeofmle/seeing-user-research-in-mindhunter-2875ef9d7e2" target="_blank">
+              Seeing user research in Mindhunter
+            </a>
+            <p class="caption">Observations of UX on Netflix</p>
+          </div>
+          <div class="post">
+            <a href="https://medium.com/@Lifeofmle/why-i-became-a-ux-designer-f5581fe3e0d" target="_blank">
+              Why I became a UX designer
+            </a>
+            <p class="caption">My origin story</p>
+          </div>
+        </div>
+      </div>
+      <div class="speaking">
+        <h3>Speaking</h3>
+        <div class="talks">
+          <div class="talk">
+            <a href="https://www.meetup.com/en-AU/SydCSS/events/260003737/" target="_blank">
+              App like transitions
+            </a>
+            <p class="caption">SydCSS Meetup, 2019</p>
+          </div>
+          <div class="talk">
+            <a href="https://medium.com/@Lifeofmle/aligning-impact-from-boardrooms-to-pixels-3b50490a3c3c" target="_blank">
+              Using OKRs to aligning impact
+            </a>
+            <p class="caption">Agile Australia, 2017</p>
+          </div>
+          <div class="talk">
+            <a href="http://www.slideshare.net/lifeofmle/exploring-design-with-agile" target="_blank">
+              Exploring design with Agile
+            </a>
+            <p class="caption">Upfront Conf Mini, 2015</p>
+          </div>
+        </div>
+      </div>
 
       <section id="contact">
         <div class="content">
@@ -249,7 +269,7 @@
         </div>
       </div>
       <p class="caption">Hand crafted in Sydney</p>
-      <p class="caption">Blobs inspired by Jack Lo Russo’s talk and implementation by Monica Dinculescu.</p>
+      <p class="caption">Blobs inspired by <a href="https://vimeo.com/358956867" target="_blank">Jack Lo Russo’s talk</a> and implementation by <a href="https://codepen.io/notwaldorf/pen/omXwzw" target="_blank">Monica Dinculescu</a>.</p>
     </footer>
 
     <!-- ==============================================
@@ -263,6 +283,26 @@
     <script>
       AOS.init({
         easing: 'ease-out-quad'
+      });
+
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      let currentTheme = 'theme';
+
+      function toggleTheme() {
+        document.querySelector('body').classList.remove(currentTheme);
+        if (currentTheme === 'theme') {
+          currentTheme = 'altTheme';
+        } else {
+          currentTheme = 'theme';
+        }
+        document.querySelector('body').classList.add(currentTheme);
+      }
+
+      var checkbox = document.querySelector("input[name=darkToggle]");
+      checkbox.checked = prefersDark;
+
+      checkbox.addEventListener('change', function() {
+          toggleTheme();
       });
     </script>
 </html>
