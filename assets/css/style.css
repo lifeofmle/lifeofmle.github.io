@@ -250,6 +250,10 @@ nav a:hover {
   transform-origin: 50% 50%;
 }
 
+.blob {
+  display: none;
+}
+
 .blobLabel {
   position: absolute;
   top: 50%;
@@ -547,6 +551,9 @@ input:checked + .slider:before {
 
 
 @media (min-width: 480px) {
+  .blob {
+    display: block;
+  }
   section,
   .writing,
   .speaking {
