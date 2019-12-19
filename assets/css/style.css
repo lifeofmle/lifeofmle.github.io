@@ -192,10 +192,10 @@ nav a:hover {
 
 /* HERO BLOCK BLOBS */
 #hero {
+  display: none;
   width: 100vw;
   height: calc(100vh - 40px);
   position: relative;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -250,7 +250,7 @@ nav a:hover {
   transform-origin: 50% 50%;
 }
 
-.blob {
+#hero {
   display: none;
 }
 
@@ -355,12 +355,7 @@ section {
   position: absolute;
   transform: scale(0.5);
 }
-.profile.large {
-  height: 360px;
-}
-.profile.large > div {
-  transform: scale(0.8);
-}
+
 .profile--pic {
   filter: drop-shadow(4px 8px 16px rgba(0, 0, 0, 0.25));
 }
@@ -439,7 +434,7 @@ section {
 }
 
 .plugin img {
-  width: 50%;
+  width: 40%;
 }
 
 /* CONNECT */
@@ -551,8 +546,17 @@ input:checked + .slider:before {
 
 
 @media (min-width: 480px) {
-  .blob {
-    display: block;
+  #hero {
+    display: flex;
+  }
+  .profile.large {
+    height: 360px;
+  }
+  .profile.large > div {
+    transform: scale(0.8);
+  }
+  .plugin img {
+    width: 50%;
   }
   section,
   .writing,
