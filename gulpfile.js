@@ -1,55 +1,71 @@
-var gulp 		= require('gulp'),
-    sass 		= require('gulp-sass'),
-    htmlmin 	= require('gulp-htmlmin'),
-    concat 		= require('gulp-concat'),
-    browserSync = require('browser-sync').create(),
-    reload 		= browserSync.reload;
+const gulp = require('gulp');
+const sass = require('gulp-sass')(require('sass')); // Updated for Dart Sass
+const htmlmin = require('gulp-htmlmin');
+const concat = require('gulp-concat');
+const browserSync = require('browser-sync').create();
 
-var htmlMinifyRules = {
-	removeComments: true,
-	collapseWhitespace: true,
-	conservativeCollapse: true,
+const htmlMinifyRules = {
+    removeComments: true,
+    collapseWhitespace: true,
+    conservativeCollapse: true,
     minifyJS: true
-}
+};
 
 // Preprocess SCSS into CSS
-gulp.task('sass', function() {
+function compileSass() {
     return gulp
-	    .src('./source/scss/**/*.scss')
-	    .pipe(sass())
-	    .pipe(concat('main.css'))
-	    .pipe(gulp.dest('./assets/css'));
-});
+        .src('./source/scss/**/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(concat('main.css'))
+        .pipe(gulp.dest('./assets/css'))
+        .pipe(browserSync.stream());
+}
 
-gulp.task('js', function() {
-	return gulp
-		.src('./source/js/main.js')
-		.pipe(gulp.dest('./assets/js'));
-});
-
-// Minify files
-gulp.task('minify', function() {
+// Move JS files
+function scripts() {
     return gulp
-	    .src('./source/**/*.html')
-	    .pipe(htmlmin(htmlMinifyRules))
-	    .pipe(gulp.dest('./'));
-});
+        .src('./source/js/main.js', { allowEmpty: true })
+        .pipe(gulp.dest('./assets/js'));
+}
 
-gulp.task('sass-watch', ['sass'], function () {
+// Minify HTML files
+function minifyHtml() {
+    return gulp
+        .src('./source/**/*.html')
+        .pipe(htmlmin(htmlMinifyRules))
+        .pipe(gulp.dest('./'))
+        .pipe(browserSync.stream());
+}
 
-    // Serve files from the root of this project
+// Watch files and serve
+// Watch files and serve
+function watch() {
     browserSync.init({
         server: {
-            server: "./"
-        }
+            // Ensure this points to where your index.html is located
+            baseDir: "./" 
+        },
+        // Optional: keeps the browser from opening a new tab every time you restart gulp
+        open: true 
     });
 
-    // add browserSync.reload to the tasks array to make
-    // all browsers reload after tasks are complete.
-    gulp.watch("source/**/*.html",["minify"]).on("change", reload);
-    gulp.watch("source/scss/*.scss", ['sass']).on("change", reload);
-});
+    // Watch for changes in the source folder
+    // Using './source' prefix ensures the file system watcher triggers correctly
+    gulp.watch("./source/**/*.html", minifyHtml);
+    gulp.watch("./source/scss/**/*.scss", compileSass);
+    gulp.watch("./source/js/**/*.js", scripts);
 
+    // Watch for changes in the output folder to trigger a reload
+    // This is a backup to ensure if the tasks above finish, the browser refreshes
+    gulp.watch(["./*.html", "./assets/css/*.css", "./assets/js/*.js"]).on("change", browserSync.reload);
+}
 
-// Entry point to start Gulp
-gulp.task('default', ['js','minify','sass-watch']);
+// Define complex tasks
+const build = gulp.series(gulp.parallel(scripts, minifyHtml, compileSass));
+const dev = gulp.series(build, watch);
+
+// Export tasks
+exports.sass = compileSass;
+exports.minify = minifyHtml;
+exports.js = scripts;
+exports.default = dev;
