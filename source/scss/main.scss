@@ -6,17 +6,19 @@ $susy: (
 );
 
 /* Variables */
-$sans: 'Open Sans', sans-serif;
+$sans: 'Inter', sans-serif;
 $serif: 'Playfair Display', serif;
+$mono: 'JetBrains Mono', monospace;
 $base-font-size: 16px;
 
-$text-dark: #6d6d6d;
+$text-dark: #1a1a1a;
 $text-light: #ffffff;
 
 $theme-primary: #5281A1;
 $theme-inverse: #ffffff;
 
-$nav-background: #ffffff;
+$nav-background: #f8f8f8;
+$content-background: #f5f2e9;
 
 $hero-color: rgba(90, 169, 206, 0.7);
 $footer-color: #1f2c37;
@@ -63,37 +65,37 @@ body {
 	margin: 0;
 	display: flex;
 	flex-direction: column;
+	font-size: 1.2rem;
+	line-height: 1.6;
 }
 
 h1 {
-	font-family: $serif;
-	font-weight: 400;
-	font-size: 48px;
-	line-height: 50px;
+	font-family: $mono;
+	font-weight: 800;
+	font-size: 2rem;
 
-	&.large {
-		font-size: 58px;
-		line-height: 60px;
-	}
+	// &.large {
+	// 	font-size: 58px;
+	// 	line-height: 60px;
+	// }
 }
 h2 {
-	font-family: $serif;
-	font-weight: 400;
-	font-size: 24px;
-	line-height: 32px;
-	border-bottom: 1px solid;
+	font-family: $mono;
+	font-weight: 600;
+	font-size: 1.5rem;
+	letter-spacing: -0.05rem;
 	display: table;
 	padding-bottom: 7px;
 }
-
-p {
-	font-size: 18px;
-	line-height: 28px;
+h3, h4 {
+	font-family: $mono;
+	font-weight: 600;
+	letter-spacing: -0.05rem;
+	font-size: 1.2rem;
 }
 
+
 a {
-	font-size: 18px;
-	line-height: 28px;
 	color: $text-light;
 	&.dark {
 		color: $text-dark;
@@ -101,8 +103,8 @@ a {
 }
 
 .logo {
-	width: 24px;
-	height: 24px;
+	width: 2.6rem;
+	height: 2.6rem;
 }
 
 nav {
@@ -127,8 +129,8 @@ nav {
 
 		a {
 			color: $text-dark;
-			font-size: 20px;
-			line-height: 30px;
+			font-weight: 600;
+			letter-spacing: 0.02rem;
 			text-decoration: none;
 			display: flex;
 			align-items: center;
@@ -148,12 +150,15 @@ nav {
 		text-align: center;
 
 		li a {
+			font-size: 1.2rem;
+			font-weight: 500;
 			text-decoration: none;
 			color: $text-dark;
 		}
 	}
 
 	.navbar-toggle {
+		display: none;
 		cursor: pointer;
 		background-color: transparent;
 		border: 0;
@@ -186,6 +191,7 @@ nav {
 			display: flex !important;;
 			flex-direction: row;
 			order: 3;
+			align-items: center;
 
 			li+li {
 				margin-left: 20px;
@@ -306,6 +312,11 @@ nav {
 
 	.card {
 		padding: 16px;
+
+		h2 {
+			font-size: 1.1rem;
+			letter-spacing: -0.04rem;
+		}
 	}
 	display: grid;
 	grid-template-rows: auto;
@@ -555,24 +566,33 @@ footer {
 }
 
 .caseStudy {
-	background: #F8F8F8;
+	background: $content-background;
 	color: $text-dark;
 	padding: 32px 0;
 
 	h1 {
-		font-family: $serif;
-		font-size: 48px;
-		line-height: 56px;
+		font-family: $mono;
+		font-weight: 800;
+		font-size: 3rem;
+		letter-spacing: -0.05rem;
 
 		@media screen and (max-width: $m-breakpoint){
-			font-size: 32px;
-			line-height: 48px;
+			font-size: 2.2rem;
+			line-height: 2.6rem;
 		}
 	}
 
 	h2 {
-		margin-top: 24px;
-		margin-bottom: 24px;
+		font-size: 2rem;
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+
+		@media screen and (max-width: $m-breakpoint){
+			font-size: 1.8rem;
+			line-height: 2rem;
+			margin-top: 1.5rem;
+			margin-bottom: 1.5rem;
+		}
 	}
 
 	a {
@@ -613,15 +633,16 @@ footer {
 	}
 
 	.caption {
-		font-size: 12px;
-		line-height: 16px;
+		font-family: $mono;
+		font-size: 0.85rem;
+		line-height: 2;
 		margin-top: 0px;
 		margin-bottom: 16px;
 
-		@media screen and (min-width: $m-breakpoint){
-			font-size: 16px;
-			line-height: 24px;
-		}
+		// @media screen and (min-width: $m-breakpoint){
+		// 	font-size: 0.85rem;
+		// 	line-height: 24px;
+		// }
 	}	
 
 	&.hero {
