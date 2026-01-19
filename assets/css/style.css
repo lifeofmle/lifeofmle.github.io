@@ -1,6 +1,9 @@
 :root {
   --mle-font-family: 'Montserrat', sans-serif;
+  --mle-font-sans-serif: 'Inter', sans-serif;
+  --mle-font-mono: 'JetBrains Mono', monospace;
   --mle-font-weight-bold: 800;
+  --mle-font-weight-regular: 400;
   --mle-animation-blob-duration: 60s;
 
   --mle-blue100: #25476F;
@@ -9,6 +12,7 @@
 
   --mle-black100: #222222;
   --mle-black50: #555555;
+  --mle-blackink: #1a1a1a;
 
   --mle-white: #FFFFFF;
 
@@ -17,7 +21,7 @@
   --mle-shadow-1: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
 
   --mle-background: var(--mle-white);
-  --mle-text-color: var(--mle-black100);
+  --mle-text-color: var(--mle-blackink);
   --mle-text-alt-color: var(--mle-white);
   --mle-caption-color: var(--mle-black50);
   --mle-heading-color: var(--mle-blue100);
@@ -31,7 +35,7 @@ html {
 	box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: var(--mle-font-family);
+  font-family: var(--mle-font-sans-serif);
   font-size: 20px;
   line-height: 36px;
   overflow-x: hidden;
@@ -101,13 +105,15 @@ h1, h2, h3, p {
 
 h1 {
   font-size: 13vmin;
+  font-family: var(--mle-font-sans-serif);
   line-height: 1.2;
   color: var(--mle-heading-color);
   font-weight: var(--mle-font-weight-bold);
 }
 h2 {
-  font-size: 40px;
-  line-height: 48px;
+  font-size: 3vmin;
+  line-height: 1.2;
+  font-family: var(--mle-font-mono);
   color: var(--mle-heading-color);
   font-weight: var(--mle-font-weight-bold);
   text-align: center;
@@ -203,6 +209,9 @@ nav a:hover {
 .hero--content {
   width: 90%;
   text-align: center;
+  h2 {
+    font-weight: var(--mle-font-weight-regular);
+  }
 }
 
 #hero .blob1 {
