@@ -1,0 +1,57 @@
+/* ============================================================
+   Paper — bone cardstock background
+   ------------------------------------------------------------
+   Drop this on a full-bleed element (e.g. <body>) to get the
+   bone-toned cardstock with grain, radial flecks and a soft
+   vignette. Tweak via the CSS variables.
+   ============================================================ */
+
+:root {
+  /* Paper tones */
+  --paper:        #e2ded4;   /* bone */
+  --paper-ink:    #1c1b16;   /* deep brown-black */
+  --paper-soft:   #5e594d;   /* faded ink, captions, eyebrows */
+  --paper-rule:   #2a2820;   /* hairline dividers */
+  --paper-warm:   #f5f1e6;   /* warmer card surfaces (polaroid, modal) */
+
+  /* Texture knobs */
+  --grain-opacity: 0.22;     /* 0 = clean, 0.5 = visible newsprint */
+  --grain-size:    420px;    /* noise tile size */
+  --vignette-hi:   0.28;     /* top-left highlight */
+  --vignette-lo:   0.10;     /* bottom-right shadow */
+  --fleck-alpha:   0.6;      /* 0..1 — speckle intensity */
+
+  /* Fonts */
+  --font-body: 'Newsreader', Georgia, serif;
+  --font-title: 'DM Serif Display', "Cormorant Garamond", serif;
+  --font-subheading: 'Cormorant Garamond', serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+/* Utility class — apply to any full-bleed surface */
+.paper-bg {
+  background-color: var(--paper);
+  background-image:
+    /* Radial flecks (printed-paper speckle) */
+    radial-gradient(circle at 13% 22%, rgba(28,27,24, calc(0.55 * var(--fleck-alpha))) 0.8px, transparent 1.3px),
+    radial-gradient(circle at 71%  8%, rgba(28,27,24, calc(0.45 * var(--fleck-alpha))) 0.7px, transparent 1.1px),
+    radial-gradient(circle at 42% 64%, rgba(28,27,24, calc(0.50 * var(--fleck-alpha))) 0.9px, transparent 1.4px),
+    radial-gradient(circle at 88% 78%, rgba(28,27,24, calc(0.40 * var(--fleck-alpha))) 0.6px, transparent 1.0px),
+    radial-gradient(circle at 24% 90%, rgba(28,27,24, calc(0.55 * var(--fleck-alpha))) 0.7px, transparent 1.2px),
+    radial-gradient(circle at 60% 40%, rgba(28,27,24, calc(0.32 * var(--fleck-alpha))) 0.5px, transparent 0.9px),
+    radial-gradient(circle at  6% 56%, rgba(28,27,24, calc(0.30 * var(--fleck-alpha))) 0.5px, transparent 0.9px),
+    /* SVG fractalNoise grain — encoded inline as data URI */
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='420' height='420'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.10  0 0 0 0 0.09  0 0 0 0 0.08  0 0 0 0.22 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>"),
+    /* Soft vignette — highlight from top-left, shadow toward bottom-right */
+    radial-gradient(ellipse at 28% 18%, rgba(255,255,255, var(--vignette-hi)), transparent 65%),
+    radial-gradient(ellipse at 82% 88%, rgba(40,38,33,   var(--vignette-lo)),  transparent 70%);
+  background-attachment: fixed;
+  background-size:
+    175px 175px, 200px 200px, 225px 225px, 150px 150px, 250px 250px, 110px 110px, 137px 137px,
+    var(--grain-size) var(--grain-size),
+    auto, auto;
+  background-repeat: repeat;
+}
+
+/* Selection looks like wet ink */
+::selection { background: rgba(40,38,33,0.15); color: var(--paper-ink); }
