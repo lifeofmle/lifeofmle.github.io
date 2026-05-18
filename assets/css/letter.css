@@ -16,7 +16,7 @@ body {
 .page {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 96px 40px 160px;
+  padding: 48px 40px 160px;
   box-sizing: border-box;
   position: relative;
 }
@@ -116,47 +116,6 @@ a:hover .color-reveal,
   filter: grayscale(0) contrast(1.05) sepia(0);
 }
 
-
-@media (min-width: 1024px) {
-  .page-grid {
-    display: grid;
-    /* Defines 3 columns: sidebars take 1 part, center takes 2 parts of available space */
-    grid-template-columns: 220px minmax(0, 600px) 220px;
-    /* Defines 3 rows that adapt to the height of their content */
-    grid-template-rows: auto auto auto; 
-    
-    /* The visual map matching your image */
-    grid-template-areas: 
-      "intro-left  intro  intro-right"
-      "body-left   body   body-right"
-      ".           footer .         ";
-    column-gap: 60px;
-    justify-content: center;
-    align-items: start;
-  }
-
-  .polaroid-wrap { display: block; }
-  .polaroid-circle { display: none; }
-  .inline-case { display: none; }
-  .gutter {
-    display: flex;
-    flex-direction: column;
-    gap: 36px;
-  }
-
-  /* Assigning each HTML element to its respective grid area */
-  .intro-left  { grid-area: intro-left; }
-  .intro       { grid-area: intro; }
-  .intro-right { grid-area: intro-right; }
-
-  .case-study-left   { grid-area: body-left; }
-  .case-study        { grid-area: body; }
-  .case-study-right  { grid-area: body-right; padding-top: 500px; }
-
-  .footer-body      { grid-area: footer; }
- 
-}
-
 /* ---------- Masthead ---------- */
 .masthead {
   display: flex;
@@ -181,6 +140,7 @@ a:hover .color-reveal,
 .masthead a:hover,
 .masthead a.active { color: var(--paper-ink); }
 .masthead a.active { border-bottom: 1px solid var(--paper-ink); }
+.masthead .callout { display: none; }
 
 /* ---------- Footer ---------- */
 .footer {
@@ -447,7 +407,7 @@ a:hover .color-reveal,
     transform: rotate(-2deg);
     width: 160px;
   }
-  .page { padding: 56px 24px 120px; }
+  .page { padding: 16px 24px 120px; }
 }
 
 
@@ -455,4 +415,43 @@ a:hover .color-reveal,
   .color-reveal { transition: none; }
 }
 
+@media (min-width: 1024px) {
+  .page-grid {
+    display: grid;
+    /* Defines 3 columns: sidebars take 1 part, center takes 2 parts of available space */
+    grid-template-columns: 220px minmax(0, 600px) 220px;
+    /* Defines 3 rows that adapt to the height of their content */
+    grid-template-rows: auto auto auto; 
+    
+    /* The visual map matching your image */
+    grid-template-areas: 
+      "intro-left  intro  intro-right"
+      "body-left   body   body-right"
+      ".           footer .         ";
+    column-gap: 60px;
+    justify-content: center;
+    align-items: start;
+  }
 
+  .masthead .callout { display: block; }
+  .polaroid-wrap { display: block; }
+  .polaroid-circle { display: none; }
+  .inline-case { display: none; }
+  .gutter {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  /* Assigning each HTML element to its respective grid area */
+  .intro-left  { grid-area: intro-left; }
+  .intro       { grid-area: intro; }
+  .intro-right { grid-area: intro-right; }
+
+  .case-study-left   { grid-area: body-left; }
+  .case-study        { grid-area: body; }
+  .case-study-right  { grid-area: body-right; padding-top: 500px; }
+
+  .footer-body      { grid-area: footer; }
+ 
+}
