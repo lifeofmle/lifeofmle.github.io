@@ -399,6 +399,62 @@ a:hover .color-reveal,
  overflow: hidden;
 }
 
+/* Hero */
+.caseStudy {
+  max-width: 924px;
+}
+.caseStudy img {
+  width: 100%;
+  max-width: 800px;
+}
+.caseStudy .hero {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-top: 0px;
+  margin-bottom: 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.caseStudy .hero.delivering {
+  background-color: #00aaa7;
+}
+.caseStudy .hero.kounta {
+  background-color: #F2EDEB;
+}
+
+
+.articles {
+  display: grid;
+  grid-template-rows: auto;
+  grid-row-gap: 16px;
+}
+
+.articles img{
+  max-height: 130px;
+  object-fit: scale-down;
+}
+
+.masthead.case-study {
+  margin-bottom: 0px;
+  border-bottom: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .articles {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 24px;
+  }
+}
+
+
 /* Tablet & mobile — drop the polaroid into static flow */
 @media (max-width: 1023px) {
   .polaroid-wrap {
@@ -432,6 +488,24 @@ a:hover .color-reveal,
     justify-content: center;
     align-items: start;
   }
+  .page-grid.caseStudy {
+    grid-template-columns: 1fr minmax(0, 924px) 1fr;
+    margin: 0 auto;
+  }
+  .page-grid.caseStudy .details {
+    grid-column: 2;
+  }
+  .page-grid.caseStudy img.small {
+    width: auto;
+  }
+  .page-grid.caseStudy .centred {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .page-grid.caseStudy .centred .meta {
+    justify-content: center;
+  }
+  .caseStudy { grid-area: body;}
 
   .masthead .callout { display: block; }
   .polaroid-wrap { display: block; }
